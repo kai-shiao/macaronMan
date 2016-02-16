@@ -1,14 +1,20 @@
 <h1>theMacaronMan</h1>
-<p>I built a dummy website for a fictitious macaron-only shop set in the future. The main goal here was to test my HTML5, CSS, and JavaScript knowledge 
-before moving onto addressing current industry trends such as responsive web design; thus, This version is  not made to be responsive. This web site is
-therefore made to be suitable for viewing on laptop and desktop computers. However, note that I will be soon uploading a responsive version of this web site.
+<p>I built a dummy website for a fictitious macaron-only shop set in the future. The main goal here was to test my HTML5, CSS3, and JavaScript knowledge that I
+have acquired so far. I would say that I have developed a strong understanding of using CSS selectors and advanced pseudo-classes and am becoming more comfortable
+with the principle of responsive design. 
 </p>
 
 <h2>HIGHLIGHTS AND FEATURES</h2>
 
+<h3>ALL PAGES</h3>
+<ul>
+	<li>Use of Immediately Executed Function Expressions to prevent global objects.</li>
+	<li>Dynamically generated year display for copyright.</li>
+</ul>
+
 <h3>FLAVOUR DESCRIPTION PAGE</h3>
 <ul>
-	<li>clickable and closable flavour description display</li>
+	<li>Clickable and closable flavour description display</li>
 </ul>
 	
 <h3>ONLINE ORDERING PAGE</h3>
@@ -26,7 +32,7 @@ therefore made to be suitable for viewing on laptop and desktop computers. Howev
 
 <h3>CONTACT PAGE</h3>
 <ul>
-	<li>verification controls prior to form submission:</li>
+	<li>Verification controls prior to form submission:</li>
 		<ul>
 			<li>Prevent form with blank fields from submission.</li>
 			<li>Ensure the telephone number is entered in the correct format.</li>
