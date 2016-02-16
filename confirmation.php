@@ -86,12 +86,12 @@ require "phpmailer/PHPMailerAutoload.php";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();                                      	// Use SMTP
-$mail->Host = "smtp.live.com";  						// Windows Live SMTP 
+$mail->Host = "";  										// Use your email provider's SMTP host. 
 $mail->SMTPAuth = true;                               	// SMTP authentication
-$mail->Username = "themacaronman@hotmail.com";          // Email account for the fictious shop
-$mail->Password = "Rafaelcorrea";                       // password
-$mail->SMTPSecure = "tls";                            	
-$mail->Port = 587;                                    	// Windows Live uses 587 as its port.
+$mail->Username = "";          							// Use your own email account details to test this function
+$mail->Password = "";                       			// Password removed for security reasons.
+$mail->SMTPSecure = "";                            	
+$mail->Port = ;                                    		// Look up SMTP settings for your email provider.
 $mail->setFrom("from@example.com");
 $mail->addAddress("themacaronman@hotmail.com");     	// The shop is the recipient.
 $mail->isHTML(true);                                  	// Send a HTML email.

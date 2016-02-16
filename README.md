@@ -48,8 +48,8 @@ with the principle of responsive design.
 
 <h2>NOTES</h2>
 <ul>
-	<li>Initially, PHPMailer generated send errors stating that the email account must be accessible; in oder to get around this problem, ensure that your email 
-	account is verified.</li>
+	<li>In my exprience, PHPMailer generated send errors stating that the email account must be accessible. I resolved this by having the email account 
+	account verified.</li>
 	<li>For purposes of email acount security, email account details have been omitted.</li>
 	<li>SMTP server settings have been left blank as well.</li>
 </ul>
