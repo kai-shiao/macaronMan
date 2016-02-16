@@ -1,0 +1,91 @@
+@import 'http://localhost/themacaronman2/css/reset.css';
+@import 'http://localhost/themacaronman2/css/body-header-and-footer-basics.css';
+
+section:first-of-type>p:nth-child(1)>span, section>section:nth-child(3)>p:nth-child(odd){
+	color: rgb(0,0,0);
+	text-decoration: underline;
+}
+
+section>section:nth-child(3)>p:nth-child(n), section>section:nth-child(3)>p:nth-child(even){
+	text-align: center;
+}
+
+@media only screen and (min-width:320px){
+	section:nth-child(2), section:nth-child(3):not(#contents){
+		margin-left: 12.5%;
+		margin-top: 10%;
+		width: 87.5%;
+	}
+	
+	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2), section:nth-child(2)>section:nth-child(3)>p:nth-child(odd), 
+	section:nth-child(2)>section:nth-child(3)>p:nth-child(even), section:nth-child(3):not(#contents)>p{
+		font-size: 80%;
+	}
+
+	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2), section:nth-child(2)>section:nth-child(3){
+		width: 80%;
+	}
+	
+	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2){
+		margin-bottom: 5%;
+		text-align: left;
+	}
+	
+	section:nth-child(2)>section:nth-child(3)>p:nth-child(odd){
+		margin-bottom: 0;
+	}
+	
+	section:nth-child(2)>section:nth-child(3)>p:nth-child(4){
+		text-transform: lowercase;
+	}
+	
+	section:nth-child(2)>section:nth-child(3)>p:nth-child(6){
+		margin-bottom: 10%;
+	}
+	
+	section:nth-child(2)>section:nth-child(3)>p:nth-child(even){
+		margin-bottom: 5%;
+		margin-top: 0;
+		width: 100%;
+	}
+	
+	section:nth-child(2)>section:nth-child(3){
+		border: 3px solid rgb(255,255,255);
+	}
+	
+	section:nth-child(3):not(#contents){
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width:380px){
+	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2), section:nth-child(3):not(#contents)>p{
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width:1020px){
+	section:nth-child(2)>p:nth-child(1){
+		margin-left: 75px;
+		width: 600px;
+	}
+	
+	section:nth-child(2)>section:nth-child(3){
+		margin-left: 75px;
+		width: 600px;
+	}
+
+	section:nth-child(2) > p:nth-child(2){
+		margin-left: 75px;
+		width: 600px;
+	}
+	
+	section:nth-child(3):not(#contents){
+		margin-top: 50px;	
+	}
+	
+	section:nth-child(3):not(#contents)>p{
+		margin-left: 75px;
+		width: 600px;
+	}
+}

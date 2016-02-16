@@ -1,0 +1,144 @@
+#invalidTelephoneFormatWarning, #emptyFieldsWarning{
+	background-color: rgb(255,255,255);
+	border: 2px solid rgb(0,0,0);
+	color: rgb(255,0,0);
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+}
+
+#close, #close2{
+	color: rgb(255,0,0); 
+	float:right;
+	margin-right: 2px;
+	margin-top: -1px;
+}
+
+#close:hover, #close2:hover{
+	color: rgb(0,0,0);
+	cursor: pointer;
+}
+
+.notification{
+	margin-top: 10px;
+}
+
+@media only screen and (max-width:400px){
+	#invalidTelephoneFormatWarning, #emptyFieldsWarning{
+		font-size: 70%;
+	}
+
+	#invalidTelephoneFormatWarning{
+		height: 80px;
+		left: 19%;
+		top: 30%;
+		width: 60%;
+	}
+
+	#emptyFieldsWarning{
+		height: 50px;
+		left: 25%;
+		top: 90%;
+		width: 150px;
+	}
+}
+
+@media only screen and (min-width:401px) and (max-width:660px){
+	#invalidTelephoneFormatWarning, #emptyFieldsWarning{
+		font-size: 75%;
+	}
+
+	#invalidTelephoneFormatWarning{
+		height: 17.5%;
+		left: 25%;
+		top: 27.5%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width:401px) and (max-width:489px){
+	#emptyFieldsWarning{
+		height: 50px;
+		left: 25%;
+		top: 85%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width:490px) and (max-width:660px){
+	#emptyFieldsWarning{
+		height: 50px;
+		left: 25%;
+		top: 80%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width:661px) and (max-width:699px){
+	#invalidTelephoneFormatWarning, #emptyFieldsWarning{
+		font-size: 80%;
+	}
+
+	#invalidTelephoneFormatWarning{
+		height: 20%;
+		left: 30%;
+		top: 30%;
+		width: 40%;
+	}
+
+	#emptyFieldsWarning{
+		height: 40px;
+		left: 20%;
+		top: 90%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width:700px) and (max-width:800px){
+	#invalidTelephoneFormatWarning, #emptyFieldsWarning{
+		font-size: 90%;
+	}
+
+	#invalidTelephoneFormatWarning{
+		height: 20%;
+		left: 25%;
+		top: 35%;
+		width: 40%;
+	}
+
+	#emptyFieldsWarning{
+		height: 50px;
+		left: 25%;
+		top: 90%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width:801px) and (max-width:960px){
+	#invalidTelephoneFormatWarning, #emptyFieldsWarning{
+		font-size: 100%;
+	}
+
+	#invalidTelephoneFormatWarning{
+		height: 21%;
+		left: 25%;
+		top: 30%;
+		width: 40%;
+	}
+
+	#emptyFieldsWarning{
+		height: 60px;
+		left: 25%;
+		top: 90%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width:870px) and (max-width:959px){
+	#invalidTelephoneFormatWarning{
+		height: 19%;
+		left: 25%;
+		top: 30%;
+		width: 40%;
+	}
+}

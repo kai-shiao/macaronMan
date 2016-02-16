@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Unlike conventional macaron bakeries, The Macaron Man 
+is dedicated to producing in-house, high end, and premium quality macarons using world 
+renowned ingredients.">
+<meta name="keywords" content="macaron shop, patisserie, all-natural, premium, treats">
+<link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
+<link href="css/online-ordering/main.css" rel="stylesheet">
+<title>ONLINE ORDERING FORM</title>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+		<nav>
+			<ul>
+				<li><a href="the-story.html">the story</a></li>
+				<li><a href="the-flavours.html">the flavours</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<li><a href="online-ordering.html">online ordering</a></li>
+			</ul>
+		</nav>
+
+		<h1>ONLINE ORDERING FORM</h1>
+</header>
+
+<section>
+		<p>NOTE: Please use this form for orders and in-store pick-ups of available macaron flavours.</p> 
+		<p>Custom orders (orders>200 macarons) should be arranged through contact with store representatives.</p>
+</section>
+
+<div>
+	<p>Enter the desired macaron flavours and the corresponding quantity.</p><button>Clear All</button>
+</div>
+
+<div>
+	<p>How many flavours do you want to add?</p><input type="text"><button>Clear</button>
+</div>
+ 
+<div>
+	<p>How many flavours do you want to remove?</p><input type="text"><button>Clear</button>
+</div>
+
+<p>After entering/removing the number of flavours, double click on the text box to add/remove the number inputted.</p>
+
+<button>SAVE CHANGES</button>
+
+<form method="post" action="confirmation.php">
+
+	<label for "name">Name</label><input type="text" name="name">
+	<label for "email"> E-mail Address</label><input type="email" name="emailAddress"> 
+
+	<section></section> <!--This will hold the flavour and quantity fields-->
+
+	<button type="submit">BY CLICKING THIS BUTTON, I CONFIRM AND ACCEPT MY MACARON ORDER.</button>
+
+</form>
+
+<table></table> <!--This will hold the cost breakdown-->
+
+<p>NOTE: ONCE ORDERS ARE PLACED, THE MACARON MAN <sup>&reg;</sup> IS UNABLE TO ACCEPT REFUNDS AND/OR EXCHANGES.</p>
+
+<footer>
+	<p class="footer">CONTACT THE WEBMASTER AT <span>WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
+</footer>
+
+</div>
+
+<script src="javascript/online-ordering.js"></script>
+</body>
+</html>

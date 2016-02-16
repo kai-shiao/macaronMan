@@ -1,0 +1,166 @@
+@import '../reset.css';
+@import '../body-header-and-footer-basics.css';
+@import 'javascript-effects.css';
+
+ul:nth-child(2){
+	text-align: center;
+}
+
+ul:nth-child(2)>li{
+	cursor: pointer;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul:nth-child(2)>li:hover{
+	color: rgb(0,0,0);
+}
+
+@media only screen and (min-width:320px){	
+	h1{
+		font-size: 90%;
+		margin-left: 15%;
+		width: 80%;
+	}
+	
+	ul:nth-child(2){
+		margin-bottom: 10%;
+		margin-left: 10%;
+		margin-top: 10%;
+		max-width: 90%;
+	}
+	
+	ul:nth-child(2)>li{
+		font-size: 75%;
+		margin-top: 2%;
+		text-align: center;
+		width: 70%;
+	}
+	
+	section>p{
+		color: rgb(0,0,0);
+	}
+	
+	section{
+		font-size: 75%;		
+		margin-left: 10%;
+		text-align: center;
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width:360px){			
+	h1{
+		margin-left: 17.5%;
+	}
+}
+
+@media only screen and (min-width:400px){	
+	h1{
+		margin-top: 5%;
+	}
+	
+	ul:nth-child(2){
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (min-width:410px){	
+	h1{
+		margin-left: 20%;
+	}
+}
+
+@media only screen and (min-width:430px){
+	h1{
+		margin-left: 22.5%;
+	}
+}	
+
+@media only screen and (min-width:470px){
+	h1{
+		margin-left: 25%;
+	}
+}
+
+@media only screen and (min-width:500px){
+	ul:nth-child(2){
+		margin-left: 0;
+	}
+	
+	ul:nth-child(2)>li{
+		display: inline;
+		font-size: 80%;
+		line-height: 400%;
+		margin-right: 5%;
+	}
+}
+
+@media only screen and (min-width:520px){
+	h1{
+		margin-left: 30%;
+	}
+}
+
+@media only screen and (min-width:550px){
+	ul:nth-child(2)>li{
+		margin-right: 7.5%;
+	}	
+}
+
+@media only screen and (min-width:600px){
+	ul:nth-child(2)>li{
+		margin-right: 10%;
+	}	
+}
+
+@media only screen and (min-width:620px){
+	ul:nth-child(2)>li{
+		margin-right: 5%;
+	}	
+}
+
+@media only screen and (min-width:680px){
+	h1{
+		font-size: 110%;
+	}
+	
+	ul:nth-child(2){
+		margin-left: 1%;
+	}
+	
+	ul:nth-child(2)>li{
+		display: inline;
+		font-size: 95%;
+		line-height: 250%;
+		margin-right: 10%;
+	}
+	
+	section{
+		font-size: 80%;
+	}
+}
+
+@media only screen and (min-width:700px){
+	ul:nth-child(2){
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (min-width:720px){
+	ul:nth-child(2){
+		margin-left: 3%;
+	}
+}
+
+@media only screen and (min-width:800px){
+	h1{
+		margin-left: 32.5%;
+	}
+}
+
+@media only screen and (min-width:860px){
+	ul:nth-child(2)>li{
+		margin-right: 7.5%;
+	}
+}

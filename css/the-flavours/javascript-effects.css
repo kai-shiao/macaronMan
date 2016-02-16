@@ -1,0 +1,193 @@
+.paragraph{
+	margin-top: -2px;
+}
+
+.specifications1, .specifications2, .exception{
+	color: rgb(0,0,0);
+	font-weight: bold;
+	line-height: 120%;
+	padding: 15px;
+	position: absolute;
+	text-align: center;
+}
+
+@media only screen and (min-width:320px){	
+	.specifications1, .specifications2, .exception{
+		font-size: 75%;
+		left: 10%;
+		top: 20%;
+		width: 70%;
+	}
+
+	.specifications1{
+		height: 7.5%;
+	}
+
+	.specifications2{
+		height: 13%;
+	}
+	
+	.exception{
+		height: 20%;
+	}
+}
+
+@media only screen and (min-width:380px){
+	.specifications1{
+		height: 5%;
+	}
+	
+	.specifications2{
+		height: 10%;
+	}
+
+	.exception{
+		height: 15%;
+	}
+}
+
+@media only screen and (min-width:420px){
+	.specifications2{
+		height: 9%;
+	}
+}
+
+@media only screen and (min-width:440px){
+	.exception{
+		height: 12.5%;
+	}
+}
+
+@media only screen and (min-width:500px){
+	.specifications1{
+		height: 3%;
+	}
+	
+	.specifications2{
+		height: 8%;
+	}
+
+	.exception{
+		height: 10%;
+	}
+}
+
+@media only screen and (min-width:600px){
+	.specifications2{
+		height: 6%;
+	}
+}
+
+@media only screen and (min-width:620px){
+	.exception{
+		height: 7.5%;
+	}
+}
+
+@media only screen and (min-width:820px){
+	.exception{
+		height: 5%;
+	}
+}
+
+@media only screen and (min-width:940px){
+	.specifications2{
+		height: 4%;
+	}
+}
+
+@media only screen and (min-width:1020px){	
+	.specifications1, .specifications2, .exception{
+		font-size: 80%;
+		left: 350px;
+		top: 200px;
+		width: 400px;
+	}
+	
+	.specifications1{
+		height: 30px;
+	}
+
+	.specifications2{
+		height: 60px;
+	}
+	
+	.exception{
+		height: 80px;
+	}
+}
+
+#variete0{
+	background: -moz-linear-gradient(bottom, red, #FC4952, blue); /*Firefox*/
+	background:	-o-linear-gradient(bottom, red, #FC4952, blue); /*Opera*/
+	background:	-ms-linear-gradient(bottom, red, #FC4952, blue); /*Internet Explorer*/	
+	background:	-webkit-linear-gradient(bottom, red, #FC4952, blue); /*Chrome*/
+}
+
+#variete1{
+	background-color: rgb(255,165,0);
+}
+
+#variete2{
+	background-color: rgb(97,62,2);
+}
+
+#variete3{
+	background-color: rgb(250,204,125);
+}
+
+#variete4{
+	border: solid 3px rgb(0,0,0);
+	background-color: rgb(64,41,2);
+}
+
+#variete5{
+	background-color: rgb(169,250,137);
+}
+
+#variete6{
+	background-color: rgb(252,190,43);
+}
+
+#variete7{
+	background-color: rgb(220,168,255);
+}
+
+#variete8{
+	background-color: rgb(212,69,8);
+}
+
+#variete9{
+	background-color: rgb(255,80,8);
+}
+
+#variete10{
+	border: solid 4px rgb(129,255,87);
+	background-color: rgb(255,196,87);
+}
+
+#variete11{
+	background-color: rgb(252,228,66);	
+}
+
+#variete12{
+	background-color: rgb(55,191,21);
+}
+
+#variete13{
+	background-color: rgb(164,99,49);
+}
+
+#flavour0, #flavour1, #flavour2, #flavour3, #flavour4, #flavour5, #flavour6, #flavour7,
+#flavour8, #flavour9, #flavour10, #flavour10, #flavour11, #flavour12, #flavour13{
+	float:right;
+	margin-right: -6px;
+	margin-top: -10px;
+}
+
+#flavour0:hover, #flavour1:hover, #flavour2:hover, #flavour3:hover, #flavour4:hover, #flavour5:hover, 
+#flavour6:hover, #flavour7:hover, #flavour8:hover, #flavour9:hover, #flavour10:hover, #flavour10:hover, 
+#flavour11:hover, #flavour12:hover, #flavour13:hover{
+	color: rgb(255,255,255);
+	cursor: pointer;
+}

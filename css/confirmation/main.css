@@ -1,0 +1,45 @@
+@import 'http://localhost/themacaronman2/css/reset.css';
+@import 'http://localhost/themacaronman2/css/body-header-and-footer-basics.css';
+
+section:nth-child(2)>p:last-child{
+	text-align: center;
+}
+
+@media only screen and (min-width:320px){
+	section:nth-child(2)>p:nth-child(1),section:nth-child(2)>p:nth-child(2){
+		margin-left: 10%;
+	}
+	
+	section:nth-child(2)>p:nth-child(n){
+		font-size: 80%;
+		width: 80%;
+	}
+	
+	section:nth-child(2)>p:last-child{
+		margin-left: 10%;
+		margin-top: 5%;
+		width: 80%;
+	}
+	
+	section:nth-child(2)>p:nth-child(1)>span{
+		color: rgb(0,0,0);
+		text-decoration: underline;
+	}
+	
+	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2){
+		margin-bottom: 5%;
+	}
+}
+
+@media only screen and (min-width:1020px){
+	section:nth-child(2)>p:last-child{
+		margin-left: 225px;
+		width: 600px;
+	}
+	
+	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2){
+		margin-left: 200px;
+		text-align: center;
+		width: 600px;
+	}
+}

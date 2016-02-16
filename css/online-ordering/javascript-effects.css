@@ -1,0 +1,442 @@
+.flavourLabel{
+	display: inline;
+	margin-left: 1%;
+	margin-top: 5%;
+}
+
+.flavour{
+	width: 60%;
+}
+
+.flavour, .quantity{
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+	color: rgb(0,0,0);
+	display: inline;
+	margin-top: 5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.quantity{
+	width: 40px;
+}
+
+@media only screen and (min-width: 320px){
+	.flavour{
+		width: 82%;
+	}
+
+	.flavour,.quantity{
+		display: block;
+		margin-top: 0.5%;
+	}
+
+	.QuantityLabel{
+		margin-left: 1%;
+	}
+	
+	.quantity{
+		width: 70px;
+	}
+	
+	form>input:nth-child(even){
+		margin-bottom: 2%;
+	}
+}
+
+@media only screen and (min-width: 380px){
+	.flavour{
+		width: 82%;
+	}
+}
+
+@media only screen and (min-width: 400px){
+	.flavour{
+		width: 97.5%;
+	}
+		
+	section#details{
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 440px){
+	.flavourLabel, .flavour, .QuantityLabel, .quantity{
+		margin-left: 7.5%;
+	}
+	
+	.flavour{
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width:500px){
+	.flavourLabel,.QuantityLabel{
+		margin-left: 20%;
+	}
+	
+	.flavour{
+		width: 62%;
+	}
+	
+	.flavour, .quantity{
+		margin-left: 20%;
+	}
+}
+
+@media only screen and (min-width:675px){	
+	.QuantityLabel{
+		margin-left: 20%;
+	}
+}
+
+section:last-of-type{
+	text-decoration: none; 
+}
+
+/*I have ordered the following elements based on the order in which they appear in the JavaScript code for easier maintenance.*/
+#outofRangeWarning, #invalidRemoveInput, #emptyFieldNotice, #totalCount, #orderRestrictionNotice{
+	background-color: rgb(255,255,255);
+	border: 3px solid rgb(0,0,0);
+	border-radius: 2px;
+	color: rgb(255,0,0);
+	position: absolute;
+	text-align: center;
+}
+
+@media only screen and (min-width:320px){
+	#outofRangeWarning{
+		height: 20%;
+		left: 13%;
+		top: 50%;
+		width: 70%;
+	}
+	
+	#invalidRemoveInput{
+		height: 15%;
+		left: 20%;
+		top: 80%;
+		width: 60%;
+	}
+	
+	#emptyFieldNotice{
+		height: 12.5%;
+		left: 25%;
+		top: 120%;
+		width: 50%;
+	}
+	
+	#totalCount{
+		height: 7.5%;
+		left: 40%;
+		top: 135%;
+		width: 30%;
+	}
+	
+	#orderRestrictionNotice{
+		height: 17.5%;
+		left: 20%;
+		top: 27.5%;
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width:360px){
+	#outofRangeWarning{
+		height: 15%;
+	}
+	
+	#orderRestrictionNotice{
+		height: 15%;
+	}
+}
+
+@media only screen and (min-width:370px){
+	#totalCount{
+		top: 130%;
+	}
+}
+
+@media only screen and (min-width:400px){
+	#totalCount{
+		top: 127.5%;
+	}
+
+	#orderRestrictionNotice{
+		height: 15%;
+	}
+}
+
+@media only screen and (min-width:500px){
+	#totalCount{
+		left: 45%;
+		top: 122.5%;
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width:560px){
+	#totalCount{
+		top: 120%;
+	}
+}
+
+@media only screen and (min-width:600px){	
+	#invalidRemoveInput{
+		left: 22.5%;
+		width: 55%;
+	}
+
+	#totalCount{
+		width: 20%;
+	}
+	
+	#orderRestrictionNotice{
+		height: 12.5%;
+	}
+}
+
+@media only screen and (min-width:640px){
+	#outofRangeWarning{
+		height: 12.5%;
+	}
+}
+
+@media only screen and (min-width:700px){
+	#invalidRemoveInput{
+		height: 10%;
+	}
+}
+
+@media only screen and (min-width:720px){
+	#totalCount{
+		top: 122.5%;
+		width: 17.5%;
+	}
+}
+
+@media only screen and (min-width:760px){
+	#outofRangeWarning{
+		height: 10%;
+	}
+	
+	#orderRestrictionNotice{
+		height: 12.5%;
+		left: 25%;
+		top: 30%;
+		width: 45%;
+	}	
+}
+
+@media only screen and (min-width:780px){
+	#totalCount{
+		top: 125%;
+	}
+}
+
+@media only screen and (min-width:800px){
+	#outofRangeWarning{
+		height: 12.5%;
+		left: 10%; 
+		width: 50%;
+	}
+	
+	#invalidRemoveInput{
+		height: 12.5%;
+		left: 40%;
+		top:;
+		width: 50%;
+	}
+	
+	#totalCount{
+		top: 117.5%;
+	}
+}
+
+@media only screen and (min-width:810px){
+	#emptyFieldNotice{
+		height: 7.5%;
+	}
+}
+
+@media only screen and (min-width:900px){
+	#totalCount{
+		top: 122.5%;
+	}
+}
+
+@media only screen and (min-width:920px){
+	#outofRangeWarning{
+		height: 10%;
+		top: 60%;
+	}
+
+	#emptyFieldNotice{
+		top: 75%;
+	}
+
+	#totalCount{
+		height: 7.5%;
+		left: 40%;
+		width: 12.5%;
+	}
+
+	#orderRestrictionNotice{
+		height: 10%;
+		left: 25%;
+	}
+}
+
+@media only screen and (min-width: 940px){
+	#invalidRemoveInput{
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width:960px){
+	#totalCount{
+		top: 115%;
+	}
+}
+
+@media only screen and (min-width: 1020px){
+	#totalCount{
+		top: 122.5%;
+	}
+}
+
+@media only screen and (min-width: 1100px){	
+	#outofRangeWarning{
+		left: 12.5%;
+	}
+	
+	#invalidRemoveInput{
+		height: 10%;
+	}
+	
+	#totalCount{
+		top: 122.5%;
+		width: 10%;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	#outofRangeWarning{
+		left: 17.5%;
+	}
+	
+	#invalidRemoveInput{
+		width: 42.5%;
+	}
+	
+	#emptyFieldNotice{
+		left: 30%;
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1300px){
+	#outofRangeWarning{
+		width: 40%;
+	}
+	
+	#invalidRemoveInput{
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+	#outofRangeWarning{
+		left: 20%;
+	}
+	
+	#invalidRemoveInput{
+		width: 37.5%;
+	}
+}
+
+@media only screen and (min-width: 1500px){
+	#outofRangeWarning{
+		left: 22.5%;
+		width: 35%;
+	}
+	
+	#orderRestrictionNotice, #emptyFieldNotice{
+		left: 35%;
+	}
+	
+	#orderRestrictionNotice, #emptyFieldNotice{
+		width: 30%;
+	}
+	
+	#invalidRemoveInput{
+		left: 45%;
+		width: 32.5%;
+	}
+	
+	#totalCount{
+		width: 7.5%; 
+	}
+}
+
+@media only screen and (min-width:1600px){
+	#outofRangeWarning{
+		left: 25%;
+	}
+}
+
+@media only screen and (min-width: 1700px){
+	#invalidRemoveInput{
+		width: 30%;
+	}
+	
+	#totalCount{
+		left: 45%;
+		width: 7.5%; 
+	}
+}
+
+@media only screen and (min-width: 1800px){
+	#outofRangeWarning{
+		left: 27.5%;
+		width: 30%;
+	}
+	
+	#invalidRemoveInput{
+		left: 45%;		
+		width: 27.5%;
+	}
+}
+
+#outofRangeWarning, #invalidRemoveInput, #emptyFieldNotice, #totalCount, #orderRestrictionNotice{
+	padding: 5px;
+}
+
+#closeOutOfRangeWarning, #closeInvalidRemoveInput, #closeEmptyFieldNotice, #closeTotalCount, #closeOrderRestrictionNotice{
+	float: right;
+	margin-bottom: 2px;
+	margin-right: 2px;
+}
+
+#closeOutOfRangeWarning:hover, #closeInvalidRemoveInput:hover, #closeEmptyFieldNotice:hover, #closeTotalCount:hover, #closeOrderRestrictionNotice:hover{
+	color: rgb(0,0,0);
+	cursor: pointer;
+}
+
+table{
+	border-collapse: collapse;
+	font-size: 80%;
+	margin: 3% auto;
+	width: 70%;
+}
+
+th,tr,td{
+	border-style: solid;
+	border-width: 3px;
+	text-align: center;
+}
+
+th, td{
+	padding: 3px 10px 3px 10px;	
+}
