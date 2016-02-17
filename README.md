@@ -20,7 +20,7 @@ with the principle of responsive design.
 <h3>ONLINE ORDERING PAGE</h3>
 <ul>
 	<li>Online ordering form with updatable after-tax cost breakdown</li>
-	<li>The following notes, alerts, or warnings are triggered when any of the following occurs:</li>
+	<li>The following notes, alerts, or warnings are triggered when any of the following occurs:
 	   <ul>
 	       <li>The intended order quantity is out of range. Must be at least 1 and at most 200.</li>
 		   <li>The number of flavour/quantity fields to be deleted is more than the current number of flavour/quantity fields.</li>
@@ -28,6 +28,7 @@ with the principle of responsive design.
 		   <li>The user attempts to save changes to the order form in the presence of empty flavour/quantity fields.</li>
 		   <li>The user attempts to add more than 10 flavour and quantity fields; the maximum number of flavours that can be ordered online is 10 at a time.</li>
 	   </ul>
+	</li>
 </ul>
 
 <h3>CONTACT PAGE</h3>
@@ -57,7 +58,11 @@ with the principle of responsive design.
 <h2>REFERENCES</h2>
 <p>The picture appearing in "story.html" and as a favicon throughout the entire website was pulled from 
 the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this page on Wikimedia Commons</a>.</p>.
-<p>The APA citation is as follows:</p>
+
+<p>The chalkboard background used in all the web pages of this site is from <a href="http://www.apartmenttherapy.com/how-to-make-you-2-16134">Apartment Therapy</a>.</p>
+
+<p>The corresponding APA citations are as follows:</p>
 <cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
+<cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
 
 <footer>&copy; 2016. Kai Shiao. All rights reserved.</footer>
