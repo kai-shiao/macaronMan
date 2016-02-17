@@ -59,10 +59,10 @@ with the principle of responsive design.
 <p>The picture appearing in "story.html" and as a favicon throughout the entire website was pulled from 
 the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this page on Wikimedia Commons</a>.</p>.
 
+<cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
+
 <p>The chalkboard background used in all the web pages of this site is from <a href="http://www.apartmenttherapy.com/how-to-make-you-2-16134">Apartment Therapy</a>.</p>
 
-<p>The corresponding APA citations are as follows:</p>
-<cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
 <cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
 
 <footer>&copy; 2016. Kai Shiao. All rights reserved.</footer>
