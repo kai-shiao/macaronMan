@@ -57,7 +57,7 @@ with the principle of responsive design.
 
 <h2>REFERENCES</h2>
 <p>The picture appearing in "story.html" and as a favicon throughout the entire website was pulled from 
-the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this page on Wikimedia Commons</a>.</p>.
+the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this page on Wikimedia Commons</a>.</p>
 
 <cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
 
