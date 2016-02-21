@@ -31,7 +31,7 @@ function showContent(e){
 	if (eventTarget===historyTab){
 		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE HISTORY';
 		eventTarget.style.fontSize='90%';
-		eventTarget.style.marginLeft='26px';
+		eventTarget.firstElementChild.style.marginLeft='5px';
 		inspirationTab.innerHTML='THE INSPIRATION';
 		panelContent.textContent=historyTabContent;
 	} else {
