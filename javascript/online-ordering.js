@@ -55,13 +55,12 @@ function addMoreflavours(){
 			orderDetails.appendChild(quantityInputField);
 			
 			if (Window.innerHeight<500){
-				var displayHeight=document.getElementsByTagName('body')[0].clientHeight;
-				var expandValue=wrapperElementHeight*.15;
-				document.getElementsByTagName('body')[0].style.height=displayHeight+shrinkValue+'px';
+				//Reduce current height by 15%; the equivalent is taking 85% of the current height.
+				var displayHeight=(document.getElementsByTagName('body')[0].clientHeight)*.85;  
+				document.getElementsByTagName('body')[0].style.height=displayHeight+'px';      
 			} else {
-				var wrapperElementHeight=document.getElementById('wrapper').clientHeight;
-				var expandValue=wrapperElementHeight+40;
-				document.getElementById('wrapper').style.height=expandValue+'px';
+				var wrapperElementHeight=(document.getElementById('wrapper').clientHeight)+40;
+				document.getElementById('wrapper').style.height=wrapperElementHeight+'px';
 			}
 						
 			i++;
@@ -119,13 +118,11 @@ function deleteFlavours(){
 			document.getElementsByTagName('section')[1].style.height=revised+'px';
 			
 			if (Window.innerHeight<500){
-				var displayHeight=document.getElementsByTagName('body')[0].clientHeight;
-				var shrinkValue=wrapperElementHeight*.15;
-				document.getElementsByTagName('body')[0].style.height=displayHeight-shrinkValue+'px';
+				var displayHeight=(document.getElementsByTagName('body')[0].clientHeight)*.85;
+				document.getElementsByTagName('body')[0].style.height=displayHeight+'px';
 			} else {
-				var wrapperElementHeight=document.getElementById('wrapper').clientHeight;
-				var shrinkValue=wrapperElementHeight-40;
-				document.getElementById('wrapper').style.height=shrinkValue+'px';
+				var wrapperElementHeight=(document.getElementById('wrapper').clientHeight)-40;
+				document.getElementById('wrapper').style.height=wrapperElementHeight+'px';
 			}
 			
 			j--;			

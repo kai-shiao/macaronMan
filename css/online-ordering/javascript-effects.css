@@ -73,21 +73,15 @@
 
 @media only screen and (min-width:500px){
 	.flavourLabel,.QuantityLabel{
-		margin-left: 20%;
+		margin-left: 17%;
 	}
 	
 	.flavour{
-		width: 62%;
+		width: 52.5%;
 	}
 	
 	.flavour, .quantity{
-		margin-left: 20%;
-	}
-}
-
-@media only screen and (min-width:675px){	
-	.QuantityLabel{
-		margin-left: 20%;
+		margin-left: 16%;
 	}
 }
 

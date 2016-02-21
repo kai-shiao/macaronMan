@@ -30,14 +30,17 @@ function showContent(e){
 
 	if (eventTarget===historyTab){
 		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE HISTORY';
-		eventTarget.style.fontSize='90%';
-		eventTarget.firstElementChild.style.marginLeft='5px';
+		eventTarget.style.fontSize='100%';
+		eventTarget.firstElementChild.style.marginLeft='1%';
+		if (screen.size>1020){
+			eventTarget.firstElementChild.style.marginLeft='20px';	
+		}
 		inspirationTab.innerHTML='THE INSPIRATION';
 		panelContent.textContent=historyTabContent;
 	} else {
 		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE INSPIRATION';
-		eventTarget.style.fontSize='90%';
-		eventTarget.style.marginLeft='40px';
+		eventTarget.style.fontSize='100%';
+		eventTarget.style.marginLeft='1%';
 		historyTab.innerHTML='THE HISTORY';
 		panelContent.textContent=inspirationTabContent;	
 	}		
