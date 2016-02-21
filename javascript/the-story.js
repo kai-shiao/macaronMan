@@ -29,8 +29,16 @@ function showContent(e){
 	panelContent.textContent='';
 
 	if (eventTarget===historyTab){
+		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE HISTORY';
+		eventTarget.style.fontSize='90%';
+		eventTarget.style.marginLeft='26px';
+		inspirationTab.innerHTML='THE INSPIRATION';
 		panelContent.textContent=historyTabContent;
 	} else {
+		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE INSPIRATION';
+		eventTarget.style.fontSize='90%';
+		eventTarget.style.marginLeft='40px';
+		historyTab.innerHTML='THE HISTORY';
 		panelContent.textContent=inspirationTabContent;	
 	}		
 }
