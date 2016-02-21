@@ -45,5 +45,9 @@ function showContent(e){
 
 var historyTab=document.getElementsByTagName('h1')[1];
 var inspirationTab=document.getElementsByTagName('h1')[2];
+
+//Clicking or double-clicking will both result in switching panel content.
 historyTab.addEventListener('click',showContent,false);
+historyTab.addEventListener('dblclick',showContent,false);
 inspirationTab.addEventListener('click',showContent,false);
+inspirationTab.addEventListener('dblclick',showContent,false);
