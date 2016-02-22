@@ -13,6 +13,8 @@
 function showContent(e){			
 	var eventTarget=e.target;
 	var panelContent=document.getElementsByTagName('section')[1].lastElementChild;
+	var historyTab=document.getElementsByTagName('h1')[1];
+	var inspirationTab=document.getElementsByTagName('h1')[2];
 
 	var historyTabContent='In the 2050s, in the midst of the civil war, drought, and lost family members and relatives, 23-year Roman Alamilla left his native'; 
 		historyTabContent+=' hometown Puerto del Sol to start a new beginning and restore dignity to his life. Back home, he was well-known for his passion, ';
@@ -30,27 +32,27 @@ function showContent(e){
 
 	if (eventTarget===historyTab){
 		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE HISTORY';
-		eventTarget.style.fontSize='100%';
+		eventTarget.style.fontSize='90%';
 		eventTarget.firstElementChild.style.marginLeft='1%';
-		if (screen.size>1020){
-			eventTarget.firstElementChild.style.marginLeft='20px';	
+		if (screen.size>=1020){
+			eventTarget.firstElementChild.style.marginLeft='35px';	
 		}
+		inspirationTab.style.marginLeft='40px';
 		inspirationTab.innerHTML='THE INSPIRATION';
 		panelContent.textContent=historyTabContent;
 	} else {
 		eventTarget.innerHTML='<img src="multimedia/pointingFingerIcon.png" height="20px" width="20px" alt="CORRUPTED FILE">THE INSPIRATION';
-		eventTarget.style.fontSize='100%';
+		eventTarget.style.fontSize='90%';
 		eventTarget.style.marginLeft='1%';
 		historyTab.innerHTML='THE HISTORY';
 		panelContent.textContent=inspirationTabContent;	
 	}		
 }
 
-var historyTab=document.getElementsByTagName('h1')[1];
-var inspirationTab=document.getElementsByTagName('h1')[2];
-
-//Clicking or double-clicking will both result in switching panel content.
-historyTab.addEventListener('click',showContent,false);
-historyTab.addEventListener('dblclick',showContent,false);
-inspirationTab.addEventListener('click',showContent,false);
-inspirationTab.addEventListener('dblclick',showContent,false);
+(function(){
+	//Clicking or double-clicking will both result in switching panel content.
+	document.getElementsByTagName('h1')[1].addEventListener('click',showContent,false);
+	document.getElementsByTagName('h1')[1].addEventListener('dblclick',showContent,false);
+	document.getElementsByTagName('h1')[2].addEventListener('click',showContent,false);
+	document.getElementsByTagName('h1')[2].addEventListener('dblclick',showContent,false);
+})();

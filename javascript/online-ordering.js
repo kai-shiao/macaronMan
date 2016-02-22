@@ -12,11 +12,11 @@
 
 function addMoreflavours(){
 	var i=0; //Count how many nodes have been duplicated.
-	var NumberofFlavoursToAdd=parseInt(add.value); //.value returns a string and so parseInt() is used to convert the value to an integer.
-	var added_fields=0;
+	var addFlavourField=document.getElementsByTagName('input')[0];
+	var numberOfFlavoursToAdd=parseInt(addFlavourField.value); //.value returns a string and so parseInt() is used to convert the value to an integer.
 	
-	if (NumberofFlavoursToAdd>0 && NumberofFlavoursToAdd<11){
-		while (i<NumberofFlavoursToAdd){ 
+	if (numberOfFlavoursToAdd>0 && numberOfFlavoursToAdd<11){
+		while (i<numberOfFlavoursToAdd){ 
 			/*
 			While-loop to add additional fields based on the default setup for inputting macaron flavour
 			and corresponding quantity.
@@ -54,7 +54,7 @@ function addMoreflavours(){
 			quantityInputField.setAttribute('class','quantity');
 			orderDetails.appendChild(quantityInputField);
 			
-			if (Window.innerHeight<500){
+			if (window.innerHeight<500){
 				//Reduce current height by 15%; the equivalent is taking 85% of the current height.
 				var displayHeight=(document.getElementsByTagName('body')[0].clientHeight)*.85;  
 				document.getElementsByTagName('body')[0].style.height=displayHeight+'px';      
@@ -67,37 +67,38 @@ function addMoreflavours(){
 		}
 	} else {
 		var parentElement=document.getElementById('wrapper');
-		var outofRangeWarning=document.createElement('div');
-		outofRangeWarning.id='outofRangeWarning';
+		var outOfRangeWarning=document.createElement('div');
+		outOfRangeWarning.id='outofRangeWarning';
 		var htmlMarkup='<span id="closeOutOfRangeWarning">X</span><p id="total">Invalid input. Enter a value greater than 0 but less than 11. A maximum of 10 flavours can be ordered online at once.</p>';
-		outofRangeWarning.innerHTML=htmlMarkup;
-		parentElement.appendChild(outofRangeWarning);
+		outOfRangeWarning.innerHTML=htmlMarkup;
+		parentElement.appendChild(outOfRangeWarning);
 	
 		function closeBox(){
-			parentElement.removeChild(outofRangeWarning);
+			parentElement.removeChild(outOfRangeWarning);
 		}
-		var xMark=document.getElementById('closeOutOfRangeWarning');
-		xMark.addEventListener('click',closeBox,false);	
+		document.getElementById('closeOutOfRangeWarning').addEventListener('click',closeBox,false);	
 	}
 }
 
 function captureRemoveValue(){
+	var remove=document.getElementsByTagName('input')[1];	
 	remove.focus();
 }
 
 function deleteFlavours(){
+	var remove=document.getElementsByTagName('input')[1];
 	remove.focus();
 
-	var number_of_added_fields=document.getElementsByClassName('flavour').length;
-	var DeleteValue=parseInt(remove.value);
+	var numberOfAddedFields=document.getElementsByClassName('flavour').length;
+	var deleteValue=parseInt(remove.value);
 	var i=0; //Tracker variable for the while-loop used to keep track of how many times an element has been removed.
 	
-	var j=DeleteValue-1;  
+	var j=deleteValue-1;  
 	//This variable serves as an array index tracker.
 	//Array-like index position assignments mean that the first one is occupies the 0th spot.
 	//Ex. Removing 3 elements would mean removing the 0th, 1st, and 2nd elements with class attribute value "flavour".
-	if (number_of_added_fields>=DeleteValue){
-		while (i<DeleteValue){	
+	if (numberOfAddedFields>=deleteValue){
+		while (i<deleteValue){	
 			var breakdown=document.getElementsByTagName('section')[1];
 			
 			//Select the current Jth element created by the "add" button; these have class attribute value of "flavour".
@@ -117,7 +118,7 @@ function deleteFlavours(){
 			var revised=currentHeight-40;
 			document.getElementsByTagName('section')[1].style.height=revised+'px';
 			
-			if (Window.innerHeight<500){
+			if (window.innerHeight<500){
 				var displayHeight=(document.getElementsByTagName('body')[0].clientHeight)*.85;
 				document.getElementsByTagName('body')[0].style.height=displayHeight+'px';
 			} else {
@@ -139,41 +140,44 @@ function deleteFlavours(){
 		function closeBox(){
 			parentElement.removeChild(invalidRemoveInput);
 		}
-		var xMark=document.getElementById('closeInvalidRemoveInput');
-		xMark.addEventListener('click',closeBox,false);	
+		document.getElementById('closeInvalidRemoveInput').addEventListener('click',closeBox,false);	
 	}
 }
 
 function clearAll(){
-	var input_fields=document.getElementsByTagName('input');
-	for (i=0;i<input_fields.length;i++){
-		input_fields[i].value='';
+	var inputFields=document.getElementsByTagName('input');
+	for (i=0;i<inputFields.length;i++){
+		inputFields[i].value='';
 	}
 }
 
 function eraseInputField(e){
-	var event_target=e.target;
-	if (event_target===add_clear){
-		add.value='';
+	var addFlavourField=document.getElementsByTagName('input')[0];
+	var removeFlavourField=document.getElementsByTagName('input')[1];
+	var addFieldClearButton=document.getElementsByTagName('button')[1];
+
+	var eventTarget=e.target;
+	if (eventTarget===addFieldClearButton){
+		addFlavourField.value='';
 	} else {
-		remove.value='';
+		removeFlavourField.value='';
 	}
 }
 
 function processOrder(){
-	var flavour_fields=document.getElementsByClassName('flavour');
-	var quantity_fields=document.getElementsByClassName('quantity');
+	var flavourFields=document.getElementsByClassName('flavour');
+	var quantityFields=document.getElementsByClassName('quantity');
 	
 	var Sum=0; 
 	
 	var Flavours=[], Quantity=[];
-	for (var i=0;i<flavour_fields.length;i++){
-		Flavours.push(flavour_fields[i].value);
+	for (var i=0;i<flavourFields.length;i++){
+		Flavours.push(flavourFields[i].value);
 	}
 	
 	var blankFields=0;
-	for (var i=0;i<quantity_fields.length;i++){
-		if (quantity_fields[i].value===''){
+	for (var i=0;i<quantityFields.length;i++){
+		if (quantityFields[i].value===''){
 			blankFields++;
 		}
 	}
@@ -188,11 +192,10 @@ function processOrder(){
 		function closeWarning(){
 			parentElement.removeChild(emptyFieldNotice);
 		}
-		var closeMark=document.getElementById('closeEmptyFieldNotice');
-		closeMark.addEventListener('click',closeWarning,false);	
+		document.getElementById('closeEmptyFieldNotice').addEventListener('click',closeWarning,false);	
 	} else {
-		for (var i=0;i<quantity_fields.length;i++){
-			Quantity.push(parseInt(quantity_fields[i].value)); 
+		for (var i=0;i<quantityFields.length;i++){
+			Quantity.push(parseInt(quantityFields[i].value)); 
 		} /*
 			Create an array that will be populated by inputted quantity values formatted as integers so that they can be used in calculations later.
 			Keep in mind that .value is a property that returns string output.
@@ -207,11 +210,11 @@ function processOrder(){
 		var j=0; 
 		var k=0;
 		
-		while (j<flavour_fields.length && k<flavour_fields.length){
+		while (j<flavourFields.length && k<flavourFields.length){
 			var part1='flavour['+k;
 			var part2=']';
 			var flavourFieldNameAttributeValue=part1.concat(part2);
-			flavour_fields[j].setAttribute('name',flavourFieldNameAttributeValue);
+			flavourFields[j].setAttribute('name',flavourFieldNameAttributeValue);
 			j++;
 			k++;
 		}
@@ -219,11 +222,11 @@ function processOrder(){
 		var h=0;
 		var i=0;
 		
-		while (h<quantity_fields.length && i<quantity_fields.length){
+		while (h<quantityFields.length && i<quantityFields.length){
 			var part1='quantity['+i;
 			var part2=']';
 			var quantityFieldNameAttributeValue=part1.concat(part2);
-			quantity_fields[h].setAttribute('name',quantityFieldNameAttributeValue);
+			quantityFields[h].setAttribute('name',quantityFieldNameAttributeValue);
 			h++;
 			i++;
 		}
@@ -237,21 +240,19 @@ function processOrder(){
 		function closeBox(){
 			parentElement.removeChild(totalCount);
 		}
-		var xMark=document.getElementById('closeTotalCount');
-		xMark.addEventListener('click',closeBox,false);	
+		document.getElementById('closeTotalCount').addEventListener('click',closeBox,false);	
 		
-		var giftBoxcharge;
-		var macaron_subtotal=Sum*3;
-		var macaron_subtotal_rounded=macaron_subtotal.toFixed(2);
-		var multiplicative_factor;
+		var macaronSubtotal=Sum*3;
+		var macaronSubtotalRounded=macaronSubtotal.toFixed(2);
+		var multiplicativeFactor;
 		if (Sum<10){
-			var multiplicative_factor=1.1; //This variable is set at 1.10 and only re-set to 1 if the order size is 10 macarons or more.
+			var multiplicativeFactor=1.1; //This variable is set at 1.10 and only re-set to 1 if the order size is 10 macarons or more.
 		} else {
-			multiplicative_factor=1;
+			multiplicativeFactor=1;
 		}
 		
-		var Bill=macaron_subtotal*multiplicative_factor;
-		var Bill_rounded=Bill.toFixed(2);		
+		var bill=macaronSubtotal*multiplicativeFactor;
+		var billRounded=bill.toFixed(2);		
 		
 		var invoice=document.getElementsByTagName('table')[0];
 		invoice.innerHTML='<tr><th>DESCRIPTION</th><th>DETAILS</th><th>AMOUNT</th></tr>';
@@ -273,15 +274,15 @@ function processOrder(){
 		}
 		
 		if (Sum<10){
-			var TaxPaid=macaron_subtotal*.10;
-			var TaxPaid_rounded=TaxPaid.toFixed(2);
-			invoice.innerHTML+='<tr><td>10% VAT</td><td>'+' '+'&#8364;'+macaron_subtotal_rounded+' &times; .10</td><td>'+'&#8364;'+TaxPaid_rounded+'</td></tr>';
-			invoice.innerHTML+='<tr><td colspan="2">TOTAL</td><td>'+'&#8364;'+Bill_rounded+'</td></tr>';
+			var taxPaid=macaronSubtotal*.10;
+			var taxPaidRounded=TaxPaid.toFixed(2);
+			invoice.innerHTML+='<tr><td>10% VAT</td><td>'+' '+'&#8364;'+macaronSubtotalRounded+' &times; .10</td><td>'+'&#8364;'+taxPaidRounded+'</td></tr>';
+			invoice.innerHTML+='<tr><td colspan="2">TOTAL</td><td>'+'&#8364;'+billRounded+'</td></tr>';
 		}
 
 		if (Sum>=10){
 			invoice.innerHTML+='<tr><td colspan="3">VAT EXEMPT (10 OR MORE MACARONS ORDERED)</td></tr>';
-			invoice.innerHTML+='<tr><td colspan="2">TOTAL</td><td>'+'&#8364;'+Bill_rounded+'</td></tr>';
+			invoice.innerHTML+='<tr><td colspan="2">TOTAL</td><td>'+'&#8364;'+billRounded+'</td></tr>';
 		}
 		
 		var currentHeight=document.getElementById('wrapper').clientHeight;
@@ -297,26 +298,21 @@ function processOrder(){
 		function closeWarning(){
 			parentElement.removeChild(orderRestrictionNotice);
 		}
-		var closeMark=document.getElementById('closeOrderRestrictionNotice');
-		closeMark.addEventListener('click',closeWarning,false);	
+		document.getElementById('closeOrderRestrictionNotice').addEventListener('click',closeWarning,false);	
 	} 
 }
- 
-var add=document.getElementsByTagName('input')[0];
-add.addEventListener('dblclick',addMoreflavours,false);
 
-var remove=document.getElementsByTagName('input')[1];
-remove.addEventListener('click',captureRemoveValue,false);
-remove.addEventListener('dblclick',deleteFlavours,false);
+(function(){
+	document.getElementsByTagName('input')[0].addEventListener('dblclick',addMoreflavours,false);
 
-var clear_all_fields=document.getElementsByTagName('button')[0];
-clear_all_fields.addEventListener('click',clearAll,false);
+	document.getElementsByTagName('input')[1].addEventListener('click',captureRemoveValue,false);
+	document.getElementsByTagName('input')[1].addEventListener('dblclick',deleteFlavours,false);
 
-var add_clear=document.getElementsByTagName('button')[1];
-add_clear.addEventListener('click',eraseInputField,false);
+	document.getElementsByTagName('button')[0].addEventListener('click',clearAll,false);
 
-var remove_clear=document.getElementsByTagName('button')[2];
-remove_clear.addEventListener('click',eraseInputField,false);
+	document.getElementsByTagName('button')[1].addEventListener('click',eraseInputField,false);
 
-var saveButton=document.getElementsByTagName('button')[3];
-saveButton.addEventListener('click',processOrder,false);
+	document.getElementsByTagName('button')[2].addEventListener('click',eraseInputField,false);
+
+	document.getElementsByTagName('button')[3].addEventListener('click',processOrder,false);
+})(); 

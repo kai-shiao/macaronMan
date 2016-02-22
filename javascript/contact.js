@@ -10,8 +10,8 @@
 })();
 
 function addFocus(e){
-	var event_target=e.target;
-	event_target.focus();
+	var eventTarget=e.target;
+	eventTarget.focus();
 }
 
 function verification(){
@@ -33,20 +33,21 @@ function verification(){
 }
 
 function wordCounter(){
+	var textInput=document.getElementsByTagName('textarea')[0];
 	textInputValue=textInput.value;
-	var word_count=textInputValue.split(' ').length;
+	var wordCount=textInputValue.split(' ').length;
 	var wordCountDisplay=document.getElementsByTagName('p')[1];
 	var warningDisplay=document.getElementsByTagName('p')[2]
 	
-	if(word_count===1){
-		wordCountDisplay.textContent='word count: '+word_count+' word.';
-	} else if (word_count>1 && word_count<=299){
-		wordCountDisplay.textContent='word count: '+word_count+' words.';
-	} else if (word_count===300){
-		wordCountDisplay.textContent='word count: '+word_count+' words.';
+	if(wordCount===1){
+		wordCountDisplay.textContent='word count: '+wordCount+' word.';
+	} else if (wordCount>1 && wordCount<=299){
+		wordCountDisplay.textContent='word count: '+wordCount+' words.';
+	} else if (wordCount===300){
+		wordCountDisplay.textContent='word count: '+wordCount+' words.';
 		warningDisplay.textContent='you have reached the word limit.';
 	} else {
-		wordCountDisplay.textContent='word count: '+word_count+' words.';					
+		wordCountDisplay.textContent='word count: '+wordCount+' words.';					
 		warningDisplay.textContent='you have exceeded the word limit!';
 	}
 	
@@ -57,7 +58,8 @@ function formCheck(e){
 	var name=document.getElementsByTagName('input')[0];
 	var emailAddress=document.getElementsByTagName('input')[1];
 	var contactNumber=document.getElementsByTagName('input')[2];
-	
+	var textInput=document.getElementsByTagName('textarea')[0];
+
 	var nameValue=name.value;
 	var emailAddressValue=emailAddress.value;
 	var contactNumberValue=contactNumber.value;
@@ -89,12 +91,14 @@ function formCheck(e){
 	}
 }
 
-var contactNumber=document.getElementsByTagName('input')[2];
-contactNumber.addEventListener('click',addFocus,false);
-contactNumber.addEventListener('blur',verification,false);
+(function(){
+	var contactNumber=document.getElementsByTagName('input')[2];
+	contactNumber.addEventListener('click',addFocus,false);
+	contactNumber.addEventListener('blur',verification,false);
 
-var textInput=document.getElementsByTagName('textarea')[0];
-textInput.addEventListener('keydown',wordCounter,false);
+	var textInput=document.getElementsByTagName('textarea')[0];
+	textInput.addEventListener('keydown',wordCounter,false);
 
-var sendInformation=document.getElementsByTagName('button')[0];
-sendInformation.addEventListener('click',formCheck,false);
+	var sendInformation=document.getElementsByTagName('button')[0];
+	sendInformation.addEventListener('click',formCheck,false);
+})();
