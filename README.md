@@ -65,6 +65,7 @@ the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this 
 
 <cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
 
+
 <p>In 'story.html', the pointing finger icon used to show the web user what tab he/she is currently on was made by me. I took a generic cursor pointer,
 captured a screenshot, made further edits using the freeware program Paint, and then saved it as a PNG.
 </p>
