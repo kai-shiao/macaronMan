@@ -69,6 +69,6 @@ the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this 
 captured a screenshot, made further edits using the freeware program Paint, and then saved it as a PNG.
 </p>
 
-<cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
+<cite>Shiao, K. (2016). Customized finger Pointing Icon.</cite>
 
 <footer>&copy; 2016. Kai Shiao. All rights reserved.</footer>
