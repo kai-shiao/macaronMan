@@ -22,7 +22,7 @@ is dedicated to producing in-house, high end, and premium quality macarons using
 		</ul>
 	</nav>
 
-<h1>THANK YOU FOR YOUR FEEDBACK!</h1>
+	<h1>THANK YOU FOR YOUR FEEDBACK!</h1>
 </header>
 <?php
 $name=filter_input(INPUT_POST,"name");
@@ -97,8 +97,9 @@ print <<<HERE
 		<p>GIVEN THE HIGH VOLUME OF EMAILS RECEIVED, IT MAY TAKE AS LONG AS <span>THREE (3) BUSINESS DAYS</span> TO RECEIVE A RESPONSE FROM THE MACARON MAN.</p>
 </section>
 <footer> 
-&copy; $currentYear. THE MACARON MAN. ALL RIGHTS RESERVED.
-		<p id="inside">CONTACT THE WEBMASTER AT <span>WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
+		<p>&copy; $currentYear. THE MACARON MAN. ALL RIGHTS RESERVED.</p>
+		<p>FLAGSHIP STORE ADDRESS: 888 AVENIDA DE LA REP&Ugrave;BLICA POPULAR FUENTES, BONAVENTURA.</p>
+		<p>CONTACT THE WEBMASTER AT <span>WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
 </footer>
 HERE;
 ?>

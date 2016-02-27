@@ -37,7 +37,6 @@ function showContent(e){
 		if (screen.size>=1020){
 			eventTarget.firstElementChild.style.marginLeft='35px';	
 		}
-		inspirationTab.style.marginLeft='40px';
 		inspirationTab.innerHTML='THE INSPIRATION';
 		panelContent.textContent=historyTabContent;
 	} else {

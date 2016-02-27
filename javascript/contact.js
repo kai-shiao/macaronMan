@@ -52,6 +52,7 @@ function wordCounter(){
 	}
 	
 	var footerElement=document.getElementsByTagName('footer')[0];
+	footerElement.style.paddingTop='5%';
 }
 
 function formCheck(e){

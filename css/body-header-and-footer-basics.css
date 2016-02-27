@@ -66,9 +66,13 @@ footer>p>span{
 	footer{
 		font-size: 65%;
 		margin-left: 10%;
-		margin-top: 15%;
+		margin-top: 12.5%;
 		text-align: center;
 		width: 80%;
+	}
+	
+	footer>p{
+		margin-top: 0.5%;
 	}
 }
 
@@ -300,6 +304,6 @@ footer>p>span{
 	}
 	
 	footer{
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 }

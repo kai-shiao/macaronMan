@@ -10,15 +10,15 @@
 <body>
 <div id="wrapper">
 <header>
-<nav>
-	<ul>
-		<li><a href="the-story.html">the story</a></li>
-		<li><a href="the-flavours.html">the flavours</a></li>
-		<li><a href="contact.html">contact</a></li>
-		<li><a href="online-ordering.html">online ordering</a></li>
-	</ul>
-</nav>
-<h1>ORDER CONFIRMATION!!!</h1>
+	<nav>
+		<ul>
+			<li><a href="the-story.html">the story</a></li>
+			<li><a href="the-flavours.html">the flavours</a></li>
+			<li><a href="contact.html">contact</a></li>
+			<li><a href="online-ordering.html">online ordering</a></li>
+		</ul>
+	</nav>
+	<h1>ORDER CONFIRMATION!!!</h1>
 </header>
 
 <?php
@@ -137,6 +137,7 @@ HERE;
 print <<<HERE
 <footer>
 	<p>&copy; $currentYear. ALL RIGHTS RESERVED.</p>
+	<p>FLAGSHIP STORE ADDRESS: 888 AVENIDA DE LA REP&Ugrave;BLICA POPULAR FUENTES, BONAVENTURA.</p>
 	<p>CONTACT THE WEBMASTER AT <span id="bottom">WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
 </footer>
 HERE;
