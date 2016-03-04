@@ -67,8 +67,8 @@ function popOut(e){
 	if (idConverted>=0 && idConverted<=13 ){ 		
 		var popOut=document.createElement('div');
 		
-		var varieteGenerator='variete'+eventTargetId; //In this context, variete is French for 'type'.
-		var flavourSelector='flavour'+eventTargetId;
+		var varieteGenerator='variete'+idConverted; //In this context, variete is French for 'type'.
+		var flavourSelector='flavour'+idConverted;
 
 		if (idConverted>=0 && idConverted<=5 || idConverted>=11 && idConverted<=13 ){ 
 			popOut.classList.add('specifications1');
