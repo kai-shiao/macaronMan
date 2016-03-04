@@ -13,7 +13,7 @@
 function addMoreflavours(){
 	var i=0; //Count how many nodes have been duplicated.
 	var addFlavourField=document.getElementsByTagName('input')[0];
-	var numberOfFlavoursToAdd=parseInt(addFlavourField.value); //.value returns a string and so parseInt() is used to convert the value to an integer.
+	var numberOfFlavoursToAdd=Number(addFlavourField.value); //.value returns a string and so Number() is used to convert the value to an integer.
 	
 	if (numberOfFlavoursToAdd>0 && numberOfFlavoursToAdd<11){
 		while (i<numberOfFlavoursToAdd){ 
