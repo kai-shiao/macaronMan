@@ -30,7 +30,7 @@
 	}
 
 	.QuantityLabel{
-		margin-left: 1%;
+		margin-left: 5%;
 	}
 	
 	.quantity{
@@ -42,17 +42,7 @@
 	}
 }
 
-@media only screen and (min-width: 380px){
-	.flavour{
-		width: 82%;
-	}
-}
-
-@media only screen and (min-width: 400px){
-	.flavour{
-		width: 97.5%;
-	}
-		
+@media only screen and (min-width: 400px){		
 	section{
 		width: 80%;
 	}
