@@ -195,7 +195,7 @@ function processOrder(){
 		document.getElementById('closeEmptyFieldNotice').addEventListener('click',closeWarning,false);	
 	} else {
 		for (var i=0;i<quantityFields.length;i++){
-			Quantity.push(parseInt(quantityFields[i].value)); 
+			Quantity.push(Number(quantityFields[i].value)); 
 		} /*
 			Create an array that will be populated by inputted quantity values formatted as integers so that they can be used in calculations later.
 			Keep in mind that .value is a property that returns string output.
