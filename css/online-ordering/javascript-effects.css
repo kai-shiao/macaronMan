@@ -1,11 +1,7 @@
 .flavourLabel{
 	display: inline;
-	margin-left: 1%;
+	margin-left: 5%;
 	margin-top: 5%;
-}
-
-.flavour{
-	width: 60%;
 }
 
 .flavour, .quantity{
@@ -24,12 +20,13 @@
 
 @media only screen and (min-width: 320px){
 	.flavour{
-		width: 82%;
+		width: 75%;
 	}
 
 	.flavour,.quantity{
 		display: block;
 		margin-top: 0.5%;
+		margin-left: 5%;
 	}
 
 	.QuantityLabel{
@@ -56,7 +53,7 @@
 		width: 97.5%;
 	}
 		
-	section#details{
+	section{
 		width: 80%;
 	}
 }
@@ -126,6 +123,11 @@ section:last-of-type{
 		left: 40%;
 		top: 135%;
 		width: 30%;
+	}
+	
+	#totalCount>p{
+		margin-left: 7.5%;
+		margin-top: 20%;
 	}
 	
 	#orderRestrictionNotice{
