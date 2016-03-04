@@ -89,8 +89,8 @@ function deleteFlavours(){
 	var remove=document.getElementsByTagName('input')[1];
 	remove.focus();
 
-	var numberOfAddedFields=document.getElementsByClassName('flavour').length;
-	var deleteValue=parseInt(remove.value);
+	var numberOfAddedFields=Number(document.getElementsByClassName('flavour').length);
+	var deleteValue=Number(remove.value);
 	var i=0; //Tracker variable for the while-loop used to keep track of how many times an element has been removed.
 	
 	var j=deleteValue-1;  
