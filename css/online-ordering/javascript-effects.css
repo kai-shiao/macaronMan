@@ -62,6 +62,12 @@
 	}
 }
 
+@media only screen and (min-width:1020px){
+	.flavourLabel, .QuantityLabel{
+		margin-left: 150px;
+	}
+}
+
 section:last-of-type{
 	text-decoration: none; 
 }
