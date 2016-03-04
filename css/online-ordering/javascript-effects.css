@@ -48,16 +48,6 @@
 	}
 }
 
-@media only screen and (min-width: 440px){
-	.flavourLabel, .flavour, .QuantityLabel, .quantity{
-		margin-left: 7.5%;
-	}
-	
-	.flavour{
-		width: 80%;
-	}
-}
-
 @media only screen and (min-width:500px){
 	.flavourLabel,.QuantityLabel{
 		margin-left: 17%;
