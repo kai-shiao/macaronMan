@@ -62,8 +62,7 @@ function popOut(e){
 	];
 						  
 	var eventTarget=e.target;
-	var eventTargetId=e.target.id;
-	var idConverted=parseInt(eventTargetId);
+	var idConverted=Number(e.target.id);
 	
 	if (idConverted>=0 && idConverted<=13 ){ 		
 		var popOut=document.createElement('div');
