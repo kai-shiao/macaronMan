@@ -7,7 +7,7 @@ is dedicated to producing in-house, high end, and premium quality macarons using
 <meta name="keywords" content="macaron shop, patisserie, all-natural, premium, treats">
 <link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
-<link href="http://localhost/themacaronman2/css/thank-you/main.css" rel="stylesheet">
+<link href="http://localhost/theMacaronMan/css/thank-you/main.css" rel="stylesheet">
 <title>THANK YOU!</title>
 </head>
 <body>
@@ -22,7 +22,7 @@ is dedicated to producing in-house, high end, and premium quality macarons using
 		</ul>
 	</nav>
 
-	<h1>THANK YOU FOR YOUR FEEDBACK!</h1>
+<h1>THANK YOU FOR YOUR FEEDBACK!</h1>
 </header>
 <?php
 $name=filter_input(INPUT_POST,"name");
@@ -39,9 +39,9 @@ $mail->IsSMTP();                                      	// Use SMTP
 $mail->Host = "";  										// Use your email provider's SMTP host. 
 $mail->SMTPAuth = true;                               	// SMTP authentication
 $mail->Username = "";          							// Use your own email account details to test this function
-$mail->Password = "";                       			// Password removed for security reasons.
+$mail->Password = "";                      				// Password removed for security reasons.
 $mail->SMTPSecure = "";                            	
-$mail->Port = ;                                    		// Look up SMTP settings for your email provider.
+$mail->Port = "";                                    	// Look up SMTP settings for your email provider.
 $mail->setFrom("from@example.com");
 $mail->addAddress("themacaronman@hotmail.com");     	// The shop is the recipient.
 $mail->isHTML(true);                                  	// Send a HTML email.
@@ -97,9 +97,8 @@ print <<<HERE
 		<p>GIVEN THE HIGH VOLUME OF EMAILS RECEIVED, IT MAY TAKE AS LONG AS <span>THREE (3) BUSINESS DAYS</span> TO RECEIVE A RESPONSE FROM THE MACARON MAN.</p>
 </section>
 <footer> 
-		<p>&copy; $currentYear. THE MACARON MAN. ALL RIGHTS RESERVED.</p>
-		<p>FLAGSHIP STORE ADDRESS: 888 AVENIDA DE LA REP&Uacute;BLICA POPULAR FUENTES, BONAVENTURA.</p>
-		<p>CONTACT THE WEBMASTER AT <span>WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
+&copy; $currentYear. THE MACARON MAN. ALL RIGHTS RESERVED.
+		<p id="inside">CONTACT THE WEBMASTER AT <span>WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
 </footer>
 HERE;
 ?>
