@@ -1,5 +1,5 @@
-@import 'http://localhost/themacaronman2/css/reset.css';
-@import 'http://localhost/themacaronman2/css/body-header-and-footer-basics.css';
+@import 'http://localhost/theMacaronMan/css/reset.css';
+@import 'http://localhost/theMacaronMan/css/body-header-and-footer-basics.css';
 
 section:nth-child(2)>p:last-child{
 	text-align: center;
