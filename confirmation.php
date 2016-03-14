@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
-<link href="http://localhost/themacaronman2/css/confirmation/main.css" type="text/css" rel="stylesheet">
+<link href="http://localhost/theMacaronMan/css/confirmation/main.css" type="text/css" rel="stylesheet">
 <title>ORDER CONFIRMATION</title>
 </head>
 <body>
 <div id="wrapper">
 <header>
-	<nav>
-		<ul>
-			<li><a href="the-story.html">the story</a></li>
-			<li><a href="the-flavours.html">the flavours</a></li>
-			<li><a href="contact.html">contact</a></li>
-			<li><a href="online-ordering.html">online ordering</a></li>
-		</ul>
-	</nav>
-	<h1>ORDER CONFIRMATION!!!</h1>
+<nav>
+	<ul>
+		<li><a href="the-story.html">the story</a></li>
+		<li><a href="the-flavours.html">the flavours</a></li>
+		<li><a href="contact.html">contact</a></li>
+		<li><a href="online-ordering.html">online ordering</a></li>
+	</ul>
+</nav>
+<h1>ORDER CONFIRMATION!!!</h1>
 </header>
 
 <?php
@@ -79,7 +79,7 @@ if ($total>=10){
 
 //Gather the rows formed by the loop into the table.
 $thStyle="border: 3px solid rgb(0,0,0); padding: 5px;";
-$table="<table style=\"border:3px solid rgb(0,0,0); border-collapse:collapse; color:rgb(0,0,0); font-size: 80%; font-weight:bold; margin-left: 15%; text-align:center; width: 70%;\"><tr><th style=\"$thStyle\">DESCRIPTION</th><th style=\"$thStyle\">DETAILS</th><th style=\"$thStyle\">AMOUNT</th></tr>$details</table>";
+$table="<table style=\"border:3px solid rgb(0,0,0); border-collapse:collapse; color:rgb(0,0,0); font-size: 80%; font-weight:bold; margin-left: 12.5%; text-align:center; width: 70%;\"><tr><th style=\"$thStyle\">DESCRIPTION</th><th style=\"$thStyle\">DETAILS</th><th style=\"$thStyle\">AMOUNT</th></tr>$details</table>";
 
 #Call the PHPMailer package available for download on GitHub and set up the necessary details to send a SMTP email to the shop's email account.
 require "phpmailer/PHPMailerAutoload.php";
@@ -89,9 +89,9 @@ $mail->IsSMTP();                                      	// Use SMTP
 $mail->Host = "";  										// Use your email provider's SMTP host. 
 $mail->SMTPAuth = true;                               	// SMTP authentication
 $mail->Username = "";          							// Use your own email account details to test this function
-$mail->Password = "";                       			// Password removed for security reasons.
+$mail->Password = "";                      				// Password removed for security reasons.
 $mail->SMTPSecure = "";                            	
-$mail->Port = ;                                    		// Look up SMTP settings for your email provider.
+$mail->Port = "";                                    	// Look up SMTP settings for your email provider.
 $mail->setFrom("from@example.com");
 $mail->addAddress("themacaronman@hotmail.com");     	// The shop is the recipient.
 $mail->isHTML(true);                                  	// Send a HTML email.
@@ -137,7 +137,6 @@ HERE;
 print <<<HERE
 <footer>
 	<p>&copy; $currentYear. ALL RIGHTS RESERVED.</p>
-	<p>FLAGSHIP STORE ADDRESS: 888 AVENIDA DE LA REP&Uacute;BLICA POPULAR FUENTES, BONAVENTURA.</p>
 	<p>CONTACT THE WEBMASTER AT <span id="bottom">WEBMASTER@THEMACARONMAN.COM</span> TO REPORT ANY WEB BROWSING PROBLEMS AND SUGGESTIONS.</p>
 </footer>
 HERE;
