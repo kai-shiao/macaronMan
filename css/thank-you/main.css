@@ -1,5 +1,5 @@
-@import 'http://localhost/themacaronman2/css/reset.css';
-@import 'http://localhost/themacaronman2/css/body-header-and-footer-basics.css';
+@import 'http://localhost/theMacaronMan/css/reset.css';
+@import 'http://localhost/theMacaronMan/css/body-header-and-footer-basics.css';
 
 section:first-of-type>p:nth-child(1)>span, section>section:nth-child(3)>p:nth-child(odd){
 	color: rgb(0,0,0);
