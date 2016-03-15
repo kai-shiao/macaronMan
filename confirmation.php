@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
-<link href="http://localhost/theMacaronMan/css/confirmation/main.css" type="text/css" rel="stylesheet">
+<link href="http://localhost/macaronMan/css/confirmation/main.css" type="text/css" rel="stylesheet">
 <title>ORDER CONFIRMATION</title>
 </head>
 <body>

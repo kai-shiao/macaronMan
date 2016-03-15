@@ -7,7 +7,7 @@ is dedicated to producing in-house, high end, and premium quality macarons using
 <meta name="keywords" content="macaron shop, patisserie, all-natural, premium, treats">
 <link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
-<link href="http://localhost/theMacaronMan/css/thank-you/main.css" rel="stylesheet">
+<link href="http://localhost/macaronMan/css/thank-you/main.css" rel="stylesheet">
 <title>THANK YOU!</title>
 </head>
 <body>
