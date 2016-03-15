@@ -2,6 +2,59 @@
 	var currentTime=new Date();
 	var currentYear=currentTime.getFullYear()+60;
 	
+	var serverDataRequest=new XMLHttpRequest();
+	serverDataRequest.open('GET', 'data/exchangeRates.json', true);        
+	serverDataRequest.send(null);                                 
+
+	serverDataRequest.onload=function(){
+		if (serverDataRequest.status===200){
+			var serverDataRequestParsed=JSON.parse(serverDataRequest.responseText); //Convert into a JavaScript object.
+			
+			var getSectionElement=document.getElementsByTagName('section')[0]; 
+			/*
+			-Get the section element that will be the parent of these HTML elements for exchange rates.
+			-Use a for-loop to create the HTML elements to hold currency exchange rate information.
+			-The end result, as seen in the web page, will be as follows:
+			<section><p></p><p></p><div><span></span></div><div><span></span></div></section>
+			
+			-2 div elements: one for each foreign currency.
+			*/
+			for (var i=0;i<serverDataRequestParsed.exchangeRates.length;i++){
+				var createDivContainer=document.createElement('div'); 
+				getSectionElement.appendChild(createDivContainer);
+				
+				var createFlagElement=document.createElement('img');
+				createFlagElement.setAttribute('width', '16px');
+				createFlagElement.setAttribute('height', '16px');
+				createFlagElement.setAttribute('src', serverDataRequestParsed.exchangeRates[i].flag);
+				createFlagElement.setAttribute('alt', 'THE FLAG COULD NOT BE DISPLAYED.');
+				createDivContainer.appendChild(createFlagElement);
+				
+				var createCountryLabel=document.createElement('span');
+				var CountryLabelTextNode=document.createTextNode(serverDataRequestParsed.exchangeRates[i].country);
+				createCountryLabel.appendChild(CountryLabelTextNode);
+				createDivContainer.appendChild(createCountryLabel);
+				
+				var createUnitLabel=document.createElement('span');
+				var UnitLabelTextNode=document.createTextNode(serverDataRequestParsed.exchangeRates[i].unit);
+				createUnitLabel.appendChild(UnitLabelTextNode);
+				createDivContainer.appendChild(createUnitLabel);
+
+				var createRateLabel=document.createElement('span');
+				var RateLabelTextNode=document.createTextNode(serverDataRequestParsed.exchangeRates[i].rate);
+				createRateLabel.appendChild(RateLabelTextNode);
+				createDivContainer.appendChild(createRateLabel);
+			}
+		} 
+		if (serverDataRequest.status===404){
+			var createParagraphElement=document.createElement('p');
+			var ParagraphElementTextNode=document.createTextNode('THE REQUESTED DATA WAS NOT FOUND ON THE SERVER.');
+			createParagraphElement.appendChild(ParagraphElementTextNode);
+			
+			getSectionElement.appendChild(createParagraphElement);
+		}
+	}
+	
 	var footer=document.getElementsByTagName('footer')[0];
 	var parentElement=document.getElementById('wrapper');
 	var copyright=document.createElement('p');
