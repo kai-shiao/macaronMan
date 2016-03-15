@@ -1,0 +1,6 @@
+{
+	"exchangeRates":[
+		{"flag":"multimedia/puerto-del-sol-flag.jpg", "country":"PUERTO DEL SOL", "unit":"PDS", "rate":"80"},
+		{"flag":"multimedia/dreamland-flag.jpg", "country":"DREAMLAND", "unit":"DL", "rate":"2"}
+	]
+}
