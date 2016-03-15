@@ -1,6 +1,6 @@
 @import 'http://localhost/macaronMan/css/reset.css';
 @import 'http://localhost/macaronMan/css/body-header-and-footer-basics.css';
-
+e
 section:nth-child(2)>p:last-child{
 	text-align: center;
 }
