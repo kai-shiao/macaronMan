@@ -1,6 +1,6 @@
 @import 'http://localhost/macaronMan/css/reset.css';
 @import 'http://localhost/macaronMan/css/body-header-and-footer-basics.css';
-e
+
 section:first-of-type>p:nth-child(1)>span, section>section:nth-child(3)>p:nth-child(odd){
 	color: rgb(0,0,0);
 	text-decoration: underline;
