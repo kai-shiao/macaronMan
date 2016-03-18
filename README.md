@@ -56,8 +56,8 @@ the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this 
 <p>In 'story.html', the pointing finger icon used to show the web user what tab he/she is currently on was made by me. I took a generic cursor pointer,
 captured a screenshot, made further edits using the freeware program Paint, and then saved it as a PNG.</p>
 
-<cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
-<cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
-<cite>Shiao, K. (2016). Customized finger Pointing Icon.</cite>
+<p><cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite></p>
+<p><cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite></p>
+<p><cite>Shiao, K. (2016). Customized finger Pointing Icon.</cite></p>
 
 <footer>&copy; 2016. Kai Shiao. All rights reserved.</footer>
