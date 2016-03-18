@@ -52,18 +52,12 @@ with the principle of responsive design.
 <h2>REFERENCES</h2>
 <p>The picture appearing in "story.html" and as a favicon throughout the entire website was pulled from 
 the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this page on Wikimedia Commons</a>.</p>
+<p>The chalkboard background used in all the web pages of this site is from <a href="http://www.apartmenttherapy.com/how-to-make-you-2-16134">Apartment Therapy</a>.</p>
+<p>In 'story.html', the pointing finger icon used to show the web user what tab he/she is currently on was made by me. I took a generic cursor pointer,
+captured a screenshot, made further edits using the freeware program Paint, and then saved it as a PNG.</p>
 
 <cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
-<br>
-<p>The chalkboard background used in all the web pages of this site is from <a href="http://www.apartmenttherapy.com/how-to-make-you-2-16134">Apartment Therapy</a>.</p>
-
 <cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
-
-
-<p>In 'story.html', the pointing finger icon used to show the web user what tab he/she is currently on was made by me. I took a generic cursor pointer,
-captured a screenshot, made further edits using the freeware program Paint, and then saved it as a PNG.
-</p>
-
 <cite>Shiao, K. (2016). Customized finger Pointing Icon.</cite>
 
 <footer>&copy; 2016. Kai Shiao. All rights reserved.</footer>
