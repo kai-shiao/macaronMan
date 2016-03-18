@@ -6,12 +6,6 @@ with the principle of responsive design.
 
 <h2>HIGHLIGHTS AND FEATURES</h2>
 
-<h3>ALL PAGES</h3>
-<ul>
-	<li>Use of Immediately Executed Function Expressions to prevent global objects.</li>
-	<li>Dynamically generated year display for copyright.</li>
-</ul>
-
 <h3>FLAVOUR DESCRIPTION PAGE</h3>
 <ul>
 	<li>Clickable and closable flavour description display</li>
@@ -34,10 +28,10 @@ with the principle of responsive design.
 <h3>CONTACT PAGE</h3>
 <ul>
 	<li>Verification controls prior to form submission:</li>
-		<ul>
-			<li>Prevent form with blank fields from submission.</li>
-			<li>Ensure the telephone number is entered in the correct format.</li>
-		</ul>
+	<ul>
+		<li>Prevent form with blank fields from submission.</li>
+		<li>Ensure the telephone number is entered in the correct format.</li>
+	</ul>
 </ul>
 		
 <h3>ORDER CONFIRMATION PAGE AND RECEIPT OF FEEDBACK PAGE</h3>
@@ -60,7 +54,7 @@ with the principle of responsive design.
 the <a href="https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg">this page on Wikimedia Commons</a>.</p>
 
 <cite>Ouda, M. (2007). Bearded Man Icon [Online image]. Retrieved January 27, 2016 from https://commons.wikimedia.org/wiki/File:Bearded_man_icon.jpg</cite>
-
+<br/>
 <p>The chalkboard background used in all the web pages of this site is from <a href="http://www.apartmenttherapy.com/how-to-make-you-2-16134">Apartment Therapy</a>.</p>
 
 <cite>Ryan, M. (2006). Chalkboard Paint [Online image]. Retrieved January 27, 2016 from http://www.apartmenttherapy.com/how-to-make-you-2-16134</cite>
