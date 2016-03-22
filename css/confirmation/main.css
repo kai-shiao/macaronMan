@@ -29,6 +29,19 @@ section:nth-child(2)>p:last-child{
 	section:nth-child(2)>p:nth-child(1), section:nth-child(2)>p:nth-child(2){
 		margin-bottom: 5%;
 	}
+	
+	#wrapper>p{
+		font-size: 80%;
+		margin: 2% auto;
+		text-align: center;
+		width: 80%;
+	}
+	
+	#wrapper>p>span{
+		color: rgb(0,0,0);
+		text-decoration: underline;
+		text-transform: lowercase;
+	}
 }
 
 @media only screen and (min-width:1020px){
