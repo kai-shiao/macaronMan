@@ -116,9 +116,12 @@ function popOut(e){
 						  
 	var eventTarget=e.target;
 	var idConverted=Number(e.target.id);
+	var setHeightForDescriptionBox=Number(e.target.getBoundingClientRect().y)+20;
+	console.log(setHeightForDescriptionBox);
 	
 	if (idConverted>=0 && idConverted<=13 ){ 		
 		var popOut=document.createElement('div');
+		popOut.style.top=setHeightForDescriptionBox+'px';
 		
 		var varieteGenerator='variete'+idConverted; //In this context, variete is French for 'type'.
 		var flavourSelector='flavour'+idConverted;
