@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Unlike conventional macaron bakeries, The Macaron Man 
+is dedicated to producing in-house, high end, and premium quality macarons using world renowned ingredients.">
+<meta name="keywords" content="macaron shop, patisserie, all-natural, premium, treats">
 <link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link href="http://localhost/macaronMan/css/confirmation/main.css" type="text/css" rel="stylesheet">
