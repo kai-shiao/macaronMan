@@ -15,84 +15,84 @@
 	.specifications1, .specifications2, .exception{
 		font-size: 75%;
 		left: 10%;
-		top: 20%;
 		width: 70%;
 	}
 
 	.specifications1{
-		height: 7.5%;
+		height: 15%;
 	}
 
 	.specifications2{
-		height: 13%;
+		height: 25%;
 	}
 	
 	.exception{
-		height: 20%;
+		height: 35%;
+	}
+}
+
+@media only screen and (min-width:360px){
+	.exception{
+		height: 30%;
 	}
 }
 
 @media only screen and (min-width:380px){
 	.specifications1{
-		height: 5%;
+		height: 12.5%;
 	}
 	
 	.specifications2{
-		height: 10%;
+		height: 17.5%;
 	}
+}
 
+@media only screen and (min-width:400px){
 	.exception{
-		height: 15%;
+		height: 27.5%;
 	}
 }
 
 @media only screen and (min-width:420px){
 	.specifications2{
-		height: 9%;
+		height: 15%;
+	}
+	
+	.exception{
+		height: 25%;
 	}
 }
 
 @media only screen and (min-width:440px){
-	.exception{
-		height: 12.5%;
-	}
-}
-
-@media only screen and (min-width:500px){
 	.specifications1{
-		height: 3%;
-	}
-	
-	.specifications2{
-		height: 8%;
-	}
-
-	.exception{
-		height: 10%;
-	}
-}
-
-@media only screen and (min-width:600px){
-	.specifications2{
-		height: 6%;
-	}
-}
-
-@media only screen and (min-width:620px){
-	.exception{
 		height: 7.5%;
 	}
 }
 
-@media only screen and (min-width:820px){
+@media only screen and (min-width:550px){
+	.specifications2{
+		height: 12.5%;
+	}
+}
+
+@media only screen and (min-width:600px){
 	.exception{
+		height: 17.5%;
+	}
+}
+
+@media only screen and (min-width:620px){
+	.specifications1{
 		height: 5%;
 	}
 }
 
-@media only screen and (min-width:940px){
+@media only screen and (min-width:810px){
+	.exception{
+		height: 12.5%;
+	}
 	.specifications2{
-		height: 4%;
+		height: 10%;
 	}
 }
 
@@ -100,7 +100,6 @@
 	.specifications1, .specifications2, .exception{
 		font-size: 80%;
 		left: 350px;
-		top: 200px;
 		width: 400px;
 	}
 	
