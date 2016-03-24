@@ -82,30 +82,30 @@ section:last-of-type{
 	text-align: center;
 }
 
-@media only screen and (min-width:320px){
+
+@media only screen and (min-width:320px){	
 	#outofRangeWarning{
-		height: 20%;
+		height: 32.5%;
 		left: 13%;
 		top: 50%;
 		width: 70%;
 	}
-	
+		
 	#invalidRemoveInput{
-		height: 15%;
+		height: 27.5%;
 		left: 20%;
 		top: 80%;
 		width: 60%;
 	}
 	
 	#emptyFieldNotice{
-		height: 12.5%;
+		height: 22.5%;
 		left: 25%;
-		top: 120%;
 		width: 50%;
 	}
 	
 	#totalCount{
-		height: 7.5%;
+		height: 10%;
 		left: 40%;
 		top: 135%;
 		width: 30%;
@@ -117,26 +117,35 @@ section:last-of-type{
 	}
 	
 	#orderRestrictionNotice{
-		height: 17.5%;
-		left: 20%;
-		top: 27.5%;
-		width: 60%;
+		height: 30%;
+		left: 15%;
+		width: 75%;
+	}
+	
+	#outofRangeWarning>p, #invalidRemoveInput>p, #emptyFieldNotice>p, #totalCount>p, #orderRestrictionNotice>p{
+		margin-top: 10%;
+		text-align: center;
+		width: 95%;
 	}
 }
 
 @media only screen and (min-width:360px){
 	#outofRangeWarning{
-		height: 15%;
-	}
-	
-	#orderRestrictionNotice{
-		height: 15%;
+		height: 32.5%;
 	}
 }
 
 @media only screen and (min-width:370px){
 	#totalCount{
 		top: 130%;
+	}
+	
+	#invalidRemoveInput{
+		height: 25%;
+	}
+	
+	#emptyFieldNotice{
+		height: 20%;
 	}
 }
 
@@ -145,22 +154,48 @@ section:last-of-type{
 		top: 127.5%;
 	}
 
+	#outofRangeWarning{
+		height: 30%;
+	}
+	
 	#orderRestrictionNotice{
-		height: 15%;
+		height: 27.5%;
+	}
+}
+
+@media only screen and (min-width:400px){
+	#outofRangeWarning>p, #invalidRemoveInput>p, #emptyFieldNotice>p, #totalCount>p, #orderRestrictionNotice>p{
+		margin-top: 7.5%;
 	}
 }
 
 @media only screen and (min-width:500px){
+	#outofRangeWarning{
+		height: 25%;
+	}
+	
 	#totalCount{
 		left: 45%;
 		top: 122.5%;
 		width: 25%;
+	}
+	
+	#orderRestrictionNotice{
+		height: 25%;
+	}
+	
+	#outofRangeWarning>p, #invalidRemoveInput>p, #emptyFieldNotice>p, #totalCount>p, #orderRestrictionNotice>p{
+		margin-top: 5%;
 	}
 }
 
 @media only screen and (min-width:560px){
 	#totalCount{
 		top: 120%;
+	}
+	
+	#orderRestrictionNotice{
+		height: 22.5%;
 	}
 }
 
@@ -173,21 +208,15 @@ section:last-of-type{
 	#totalCount{
 		width: 20%;
 	}
-	
-	#orderRestrictionNotice{
-		height: 12.5%;
-	}
-}
-
-@media only screen and (min-width:640px){
-	#outofRangeWarning{
-		height: 12.5%;
-	}
 }
 
 @media only screen and (min-width:700px){
+	#outofRangeWarning>p, #invalidRemoveInput>p, #emptyFieldNotice>p, #totalCount>p, #orderRestrictionNotice>p{
+		margin-top: 5%;
+	}
+
 	#invalidRemoveInput{
-		height: 10%;
+		height: 20%;
 	}
 }
 
@@ -198,15 +227,16 @@ section:last-of-type{
 	}
 }
 
-@media only screen and (min-width:760px){
-	#outofRangeWarning{
-		height: 10%;
+@media only screen and (min-width:740px){
+	#emptyFieldNotice{
+		height: 17.5%;
 	}
-	
+}
+
+@media only screen and (min-width:760px){
 	#orderRestrictionNotice{
-		height: 12.5%;
+		height: 22.5%;
 		left: 25%;
-		top: 30%;
 		width: 45%;
 	}	
 }
@@ -219,15 +249,13 @@ section:last-of-type{
 
 @media only screen and (min-width:800px){
 	#outofRangeWarning{
-		height: 12.5%;
-		left: 10%; 
+		left: 12.5%; 
 		width: 50%;
 	}
 	
 	#invalidRemoveInput{
-		height: 12.5%;
+		height: 20%;
 		left: 40%;
-		top:;
 		width: 50%;
 	}
 	
@@ -238,8 +266,9 @@ section:last-of-type{
 
 @media only screen and (min-width:810px){
 	#emptyFieldNotice{
-		height: 7.5%;
+	/*	height: 10%;*/
 	}
+	
 }
 
 @media only screen and (min-width:900px){
@@ -250,29 +279,28 @@ section:last-of-type{
 
 @media only screen and (min-width:920px){
 	#outofRangeWarning{
-		height: 10%;
 		top: 60%;
 	}
 
-	#emptyFieldNotice{
-		top: 75%;
-	}
-
 	#totalCount{
-		height: 7.5%;
+		height: 10%;
 		left: 40%;
 		width: 12.5%;
 	}
 
 	#orderRestrictionNotice{
-		height: 10%;
 		left: 25%;
+		top: 127.5%;
 	}
 }
 
 @media only screen and (min-width: 940px){
 	#invalidRemoveInput{
 		width: 45%;
+	}
+	
+	#totalCount>p{
+		margin-top: 6%;
 	}
 }
 
@@ -283,122 +311,40 @@ section:last-of-type{
 }
 
 @media only screen and (min-width: 1020px){
-	#totalCount{
-		top: 122.5%;
-	}
-}
-
-@media only screen and (min-width: 1100px){	
-	#outofRangeWarning{
-		left: 12.5%;
+	#orderRestrictionNotice{
+		width: 400px;
 	}
 	
-	#invalidRemoveInput{
-		height: 10%;
+	#orderRestrictionNotice, #outofRangeWarning{
+		height: 80px;
 	}
 	
-	#totalCount{
-		top: 122.5%;
-		width: 10%;
-	}
-}
-
-@media only screen and (min-width: 1200px){
-	#outofRangeWarning{
-		left: 17.5%;
-	}
-	
-	#invalidRemoveInput{
-		width: 42.5%;
-	}
-	
-	#emptyFieldNotice{
+	#orderRestrictionNotice, #outofRangeWarning, #emptyFieldNotice{
 		left: 30%;
-		width: 40%;
 	}
-}
-
-@media only screen and (min-width: 1300px){
-	#outofRangeWarning{
-		width: 40%;
+	
+	#outofRangeWarning>p, #invalidRemoveInput>p{
+		margin-top: 20px;
 	}
 	
 	#invalidRemoveInput{
-		width: 40%;
+		height: 100px;
+		left: 55%;
+		top: 350px;
+		width: 250px;
 	}
-}
-
-@media only screen and (min-width: 1400px){
-	#outofRangeWarning{
-		left: 20%;
+		
+	#emptyFieldNotice{
+		height: 60px;
+		width: 300px;
 	}
-	
-	#invalidRemoveInput{
-		width: 37.5%;
-	}
-}
-
-@media only screen and (min-width: 1500px){
-	#outofRangeWarning{
-		left: 22.5%;
-		width: 35%;
-	}
-	
-	#orderRestrictionNotice, #emptyFieldNotice{
-		left: 35%;
-	}
-	
-	#orderRestrictionNotice, #emptyFieldNotice{
-		width: 30%;
-	}
-	
-	#invalidRemoveInput{
-		left: 45%;
-		width: 32.5%;
-	}
-	
-	#totalCount{
-		width: 7.5%; 
-	}
-}
-
-@media only screen and (min-width:1600px){
-	#outofRangeWarning{
-		left: 25%;
-	}
-}
-
-@media only screen and (min-width: 1700px){
-	#invalidRemoveInput{
-		width: 30%;
-	}
-	
-	#totalCount{
-		left: 45%;
-		width: 7.5%; 
-	}
-}
-
-@media only screen and (min-width: 1800px){
-	#outofRangeWarning{
-		left: 27.5%;
-		width: 30%;
-	}
-	
-	#invalidRemoveInput{
-		left: 45%;		
-		width: 27.5%;
-	}
-}
-
-#outofRangeWarning, #invalidRemoveInput, #emptyFieldNotice, #totalCount, #orderRestrictionNotice{
-	padding: 5px;
 }
 
 #closeOutOfRangeWarning, #closeInvalidRemoveInput, #closeEmptyFieldNotice, #closeTotalCount, #closeOrderRestrictionNotice{
 	float: right;
-	margin-bottom: 2px;
+	margin-bottom: -3px;
 	margin-right: 2px;
+	margin-top: 0px;
 }
 
 #closeOutOfRangeWarning:hover, #closeInvalidRemoveInput:hover, #closeEmptyFieldNotice:hover, #closeTotalCount:hover, #closeOrderRestrictionNotice:hover{

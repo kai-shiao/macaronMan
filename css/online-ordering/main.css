@@ -71,7 +71,7 @@ button{
 		width: 22%;
 	}
 	
-	p:not(.footer){
+	div>p, section>p{
 		font-size: 80%;
 		text-align: left;
 	}
@@ -185,6 +185,7 @@ button{
 	
 	button[type="submit"]{
 		margin-left: 25%;
+		margin-top: 5%;
 		width: 51%;
 	}
 }
@@ -252,7 +253,7 @@ button{
 	
 	div:nth-child(4)>input, div:nth-child(5)>input{
 		margin-left: 0;
-		margin-top: 0;
+		margin-top: 1.5%;
 	}	
 }
 
