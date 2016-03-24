@@ -59,7 +59,7 @@ function addMoreflavours(){
 				var displayHeight=(document.getElementsByTagName('body')[0].clientHeight)*.85;  
 				document.getElementsByTagName('body')[0].style.height=displayHeight+'px';      
 			} else {
-				var wrapperElementHeight=(document.getElementById('wrapper').clientHeight)+40;
+				var wrapperElementHeight=(document.getElementsByTagName('form')[0].style.height)+40;
 				document.getElementById('wrapper').style.height=wrapperElementHeight+'px';
 			}
 						
@@ -122,8 +122,9 @@ function deleteFlavours(){
 				var displayHeight=(document.getElementsByTagName('body')[0].clientHeight)*.85;
 				document.getElementsByTagName('body')[0].style.height=displayHeight+'px';
 			} else {
-				var wrapperElementHeight=(document.getElementById('wrapper').clientHeight)-40;
+				var wrapperElementHeight=(document.getElementsByTagName('form')[0].style.height)-10;
 				document.getElementById('wrapper').style.height=wrapperElementHeight+'px';
+				document.getElementsByTagName('button')[4].style.marginTop='5%';
 			}
 			
 			j--;			
@@ -164,7 +165,7 @@ function eraseInputField(e){
 	}
 }
 
-function processOrder(){
+function processOrder(e){
 	var flavourFields=document.getElementsByClassName('flavour');
 	var quantityFields=document.getElementsByClassName('quantity');
 	
@@ -186,6 +187,9 @@ function processOrder(){
 		var parentElement=document.getElementById('wrapper');
 		var emptyFieldNotice=document.createElement('div');
 		emptyFieldNotice.id='emptyFieldNotice';
+		
+		var getTopDimension=e.target.offsetTop;
+		emptyFieldNotice.style.top=getTopDimension+'px';
 		emptyFieldNotice.innerHTML='<span id="closeEmptyFieldNotice">X</span><p>There is at least one empty quantity field.</p>';
 		parentElement.appendChild(emptyFieldNotice);
 	
@@ -234,7 +238,8 @@ function processOrder(){
 		var parentElement=document.getElementById('wrapper');
 		var totalCount=document.createElement('div');
 		totalCount.id='totalCount';
-		totalCount.innerHTML='<span id="closeTotalCount">X</span><p id="total">TOTAL: '+Sum+'</p>';
+		totalCount.style.top=e.target.offsetTop-80+'px';
+		totalCount.innerHTML='<span id="closeTotalCount">X</span><p>TOTAL: '+Sum+'</p>';
 		parentElement.appendChild(totalCount);
 	
 		function closeBox(){
@@ -291,6 +296,7 @@ function processOrder(){
 	} else {
 		var parentElement=document.getElementById('wrapper');
 		var orderRestrictionNotice=document.createElement('div');
+		orderRestrictionNotice.style.top=e.target.offsetTop-120+'px';
 		orderRestrictionNotice.id='orderRestrictionNotice';
 		orderRestrictionNotice.innerHTML='<span id="closeOrderRestrictionNotice">X</span><p>See note above. Total amount ordered must be at least one and cannot exceed 200 macarons.</p>';
 		parentElement.appendChild(orderRestrictionNotice);
