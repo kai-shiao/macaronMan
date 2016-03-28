@@ -1,6 +1,3 @@
-@import 'http://localhost/macaronMan/css/reset.css';
-@import 'http://localhost/macaronMan/css/body-header-and-footer-basics.css';
-
 section:first-of-type>p:nth-child(1)>span, section>section:nth-child(3)>p:nth-child(odd){
 	color: rgb(0,0,0);
 	text-decoration: underline;
@@ -9,8 +6,6 @@ section:first-of-type>p:nth-child(1)>span, section>section:nth-child(3)>p:nth-ch
 section>section:nth-child(3)>p:nth-child(n), section>section:nth-child(3)>p:nth-child(even){
 	text-align: center;
 }
-
-
 
 @media only screen and (min-width:320px){
 	section:nth-child(2), section:nth-child(3):not(#contents){
