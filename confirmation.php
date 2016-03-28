@@ -10,6 +10,8 @@ print <<<HERE
 <link rel="icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link rel="shortcut icon" type="image/x-icon" href="multimedia/beardedManIcon.ico"/>
 <link href="css/confirmation/main.css" type="text/css" rel="stylesheet">
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<link href="css/body-header-and-footer-basics.css" type="text/css" rel="stylesheet">
 HERE;
 ?>
 <title>ORDER STATUS CONFIRMATION</title>
