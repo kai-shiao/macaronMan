@@ -55,7 +55,9 @@ if (isset($name) && isset($capitalizedName) && isset($emailAddress) && isset($co
 
 	$mail->Subject="RECEIPT OF FEEDBACK FROM $capitalizedName (EMAIL ADDRESS: $emailAddress)";
 
-	//In my PHP.ini file, I set the default timezone to 'Europe/London'.
+	//In this project, I have set the timezone used in this PHP script to 'America/Vancouver'.
+	date_default_timezone_set('America/Vancouver');
+
 	$date=new DateTime();
 	$currentDayOfTheWeek=$date->format("l");
 	$currentMonth=$date->format("F");

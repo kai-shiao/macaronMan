@@ -108,6 +108,9 @@ if (isset($name) && isset($emailAddress) && isset($flavour) && isset($quantity))
 
 	$mail->Subject="ONLINE ORDER BREAKDOWN DETAILS";
 
+	//In this project, I have set the timezone used in this PHP script to 'America/Vancouver'.
+	date_default_timezone_set('America/Vancouver');
+
 	//Create a date & time object so that the current time can be displayed in both the PHP page and the email.
 	//The date and time should be as accurate as possible, so DateTime is initialized only prior to finalizing the body of the email.
 	$date=new DateTime();
