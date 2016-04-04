@@ -4,6 +4,8 @@ have acquired so far. I would say that I have developed a strong understanding o
 with the principle of responsive design. 
 </p>
 
+<p>The website can be viewed at <a href="http://www.themacaronman.co">http://www.themacaronman.co</a>.</p>
+
 <h2>HIGHLIGHTS AND FEATURES</h2>
 
 <h3>FLAVOUR DESCRIPTION PAGE</h3>
