@@ -2,7 +2,7 @@ section:nth-child(2)>p:last-child{
 	text-align: center;
 }
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width:287px){
 	section:nth-child(2)>p:nth-child(1),section:nth-child(2)>p:nth-child(2){
 		margin-left: 10%;
 	}

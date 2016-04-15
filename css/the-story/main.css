@@ -5,7 +5,7 @@ section>h1:hover{
 	cursor: pointer;
 }
 
-@media only screen and (min-width:320px){	
+@media only screen and (min-width:287px){	
 	section{
 		float: left;
 		margin-left: 15%;
@@ -48,7 +48,7 @@ section>h1:hover{
 	}
 }
 
-@media only screen and (min-width:320px) and (max-width:699px){
+@media only screen and (min-width:287px) and (max-width:699px){
 	section>h1:first-child{
 		border-left: 3px solid rgb(0,0,0);
 		border-right: 3px solid rgb(0,0,0);
