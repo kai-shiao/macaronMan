@@ -4,7 +4,7 @@ This file is for implementing all the CSS rules for the body, header and the foo
 body{
 	background-image: url('../multimedia/chalkboard.jpg');
 	color: rgb(255,255,255);
-	font-family: "Maiandra GD", cursive;
+	font-family: "Maiandra GD", "Menlo Bold";
 	font-size: 16px;
 	font-weight: bold;
 	max-width: 100%;
