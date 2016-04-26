@@ -122,10 +122,6 @@ ul:nth-child(2)>li:hover{
 	section>div:last-of-type>span:first-of-type{
 		margin-right: 26%;
 	}
-	
-	section>div:last-of-type>span:nth-of-type(2){
-		margin-right: 10%;
-	}	
 }
 
 @media only screen and (min-width:410px){	
@@ -163,8 +159,12 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 24%;
+		margin-right: 17.5%;
 	}
+	
+	section>div:last-of-type>span:nth-of-type(2){
+		margin-right: 7.5%;
+	}	
 }
 @media only screen and (min-width:470px){
 	h1{
@@ -189,6 +189,10 @@ ul:nth-child(2)>li:hover{
 		width: 100%;
 	}
 	
+	section>div:last-of-type>span:first-of-type{
+		margin-right: 17.5%;
+	}
+	
 	section>div:last-of-type>span:nth-of-type(2){
 		margin-right: 9%;
 	}
@@ -204,13 +208,7 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 23.5%;
-	}
-}
-
-@media only screen and (min-width:540px){
-	section>div:last-of-type>span:first-of-type{
-		margin-right: 23%;
+		margin-right: 16%;
 	}
 }
 
@@ -238,7 +236,7 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 22.5%;
+		margin-right: 15%;
 	}
 	
 	section>div:last-of-type>span:nth-of-type(2){
@@ -253,12 +251,6 @@ ul:nth-child(2)>li:hover{
 	
 	section>div{
 		margin-left: 20%;
-	}
-}
-
-@media only screen and (min-width:640px){
-	section>div:last-of-type>span:first-of-type{
-		margin-right: 22%;
 	}
 }
 
@@ -293,7 +285,7 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 21.75%;
+		margin-right: 15%;
 	}
 }
 
@@ -332,7 +324,7 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 14.5%;
+		margin-right: 12.5%;
 	}
 	
 	section>div:last-of-type>span:nth-of-type(2){
@@ -350,17 +342,11 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 14%;
+		margin-right: 12%;
 	}
 
 	section>div:last-of-type>span:nth-of-type(2){
 		margin-right: 5%;
-	}
-}
-
-@media only screen and (min-width:820px){
-	section>div:last-of-type>span:first-of-type{
-		margin-right: 13.75%;
 	}
 }
 
@@ -376,7 +362,7 @@ ul:nth-child(2)>li:hover{
 	}
 	
 	section>div:last-of-type>span:first-of-type{
-		margin-right: 13.25%;
+		margin-right: 12%;
 	}
 }
 
