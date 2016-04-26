@@ -11,7 +11,7 @@
 	text-align: center;
 }
 
-@media only screen and (min-width:320px){	
+@media only screen and (min-width:287px){	
 	.specifications1, .specifications2, .exception{
 		font-size: 75%;
 		left: 10%;
