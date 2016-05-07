@@ -21,10 +21,10 @@ HERE;
 <header>
 <nav>
 	<ul>
-		<li><a href="the-story.html">the story</a></li>
-		<li><a href="the-flavours.html">the flavours</a></li>
-		<li><a href="contact.html">contact</a></li>
-		<li><a href="online-ordering.html">online ordering</a></li>
+		<li><a href="http://www.themacaronman.co/the-story">the story</a></li>
+		<li><a href="http://www.themacaronman.co/the-flavours">the flavours</a></li>
+		<li><a href="http://www.themacaronman.co/contact">contact</a></li>
+		<li><a href="http://www.themacaronman.co/online-ordering">online ordering</a></li>
 	</ul>
 </nav>
 <h1>ORDER STATUS CONFIRMATION</h1>
@@ -93,19 +93,19 @@ if (isset($name) && isset($emailAddress) && isset($flavour) && isset($quantity))
 
 	#Call the PHPMailer package available for download on GitHub and set up the necessary details to send a SMTP email to the shop's email account.
 	require "phpmailer/PHPMailerAutoload.php";
-
+	
 	$mail = new PHPMailer();
-	$mail->IsSMTP();                                      	// Use SMTP
-	$mail->Host = "";  										// Use your email provider's SMTP host. 
-	$mail->SMTPAuth = true;                               	// SMTP authentication
-	$mail->Username = "";          							// Use your own email account details to test this function
-	$mail->Password = "";                      				// Password removed for security reasons.
-	$mail->SMTPSecure = "";                            	
-	$mail->Port = "";                                    	// Look up SMTP settings for your email provider.
-	$mail->setFrom("from@example.com");
-	$mail->addAddress("themacaronman@hotmail.com");     	// The shop is the recipient.
-	$mail->isHTML(true);                                  	// Send a HTML email.
-
+	$mail->IsSMTP();                                      	
+	$mail->Host = "server179.web-hosting.com";  						
+	$mail->SMTPAuth = true;                               				
+	$mail->Username = "customer.engagement@themacaronman.co";          
+	$mail->Password = "GFb)lkp!s?7,";                       		
+	$mail->SMTPSecure = "ssl";                            	
+	$mail->Port = "465";                                    		
+	$mail->setFrom("customer.engagement@themacaronman.co");
+	$mail->addAddress("customer.engagement@themacaronman.co");     
+	$mail->isHTML(true); 
+	
 	$mail->Subject="ONLINE ORDER BREAKDOWN DETAILS";
 
 	//In this project, I have set the timezone used in this PHP script to 'America/Vancouver'.
