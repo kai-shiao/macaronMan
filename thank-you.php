@@ -46,7 +46,7 @@ if (isset($name) && isset($capitalizedName) && isset($emailAddress) && isset($co
 	$mail->Host = "server179.web-hosting.com";  						
 	$mail->SMTPAuth = true;                               				
 	$mail->Username = "customer.engagement@themacaronman.co";          
-	$mail->Password = "GFb)lkp!s?7,";                       		
+	$mail->Password = "";                       		
 	$mail->SMTPSecure = "ssl";                            	
 	$mail->Port = "465";                                    		
 	$mail->setFrom("customer.engagement@themacaronman.co");

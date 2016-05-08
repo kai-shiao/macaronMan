@@ -98,12 +98,12 @@ if (isset($name) && isset($emailAddress) && isset($flavour) && isset($quantity))
 	$mail->IsSMTP();                                      	
 	$mail->Host = "server179.web-hosting.com";  						
 	$mail->SMTPAuth = true;                               				
-	$mail->Username = "customer.engagement@themacaronman.co";          
-	$mail->Password = "GFb)lkp!s?7,";                       		
+	$mail->Username = "products@themacaronman.co";          
+	$mail->Password = "";                       		
 	$mail->SMTPSecure = "ssl";                            	
 	$mail->Port = "465";                                    		
-	$mail->setFrom("customer.engagement@themacaronman.co");
-	$mail->addAddress("customer.engagement@themacaronman.co");     
+	$mail->setFrom("products@themacaronman.co");
+	$mail->addAddress("products@themacaronman.co");     
 	$mail->isHTML(true); 
 	
 	$mail->Subject="ONLINE ORDER BREAKDOWN DETAILS";
